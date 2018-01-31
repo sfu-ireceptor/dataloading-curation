@@ -1,0 +1,1 @@
+This directory (will contain) test igBlast (https://www.ncbi.nlm.nih.gov/igblast/) data for loading into a (turnkey) iReceptor node.

@@ -1,0 +1,1 @@
+This folder contains test data in THE INTERNATIONAL IMMUNOGENETICS INFORMATION SYSTEM (http://www.imgt.org/) format for loading into a (turnkey) iReceptor node.

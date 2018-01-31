@@ -1,0 +1,1 @@
+This folder contains test data in MiXCR (https://mixcr.readthedocs.io/en/latest/) data format for loading into a (turnkey) iReceptor node.
