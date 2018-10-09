@@ -89,7 +89,6 @@ def reverse_complement(file_name,primer_type):
 # The output is a dictionary whose keys are run_id's and whose values are the corresponding primers, 
 
 def build_dictionary(file_name,primer_type,rc_option):
-    
     # get right sheet
     metadata = get_metadata_sheet(file_name)
     
@@ -99,18 +98,16 @@ def build_dictionary(file_name,primer_type,rc_option):
     if type(run_ID[0])==float:
         
         size_runID = len(run_ID)
-        new_runID = [run_ID[i] for i in range(1,size_runID)]
-        
+        new_runID = [run_ID[i] for i in range(1,size_runID)]  
     else:
         size_runID = len(run_ID)
         new_runID = [run_ID[i] for i in range(0,size_runID)]
-        
-    
+       
     # Do we want reverse complement?
-    if rc_option=="False": 
+    if rc_option==False: 
         # No
         clean_primer = clean_up_primers(file_name,primer_type)
-    elif rc_option=="True":
+    elif rc_option==True:
         # Yes
         clean_primer = reverse_complement(file_name,primer_type)
             
@@ -122,27 +119,41 @@ def build_dictionary(file_name,primer_type,rc_option):
         run_ID_primer_dictionary = {new_runID[i]:clean_primer[i] for i in range(size_runID)}
     else:
         print(size_runID,size_cleanprimer)
-        
     # Need to develop test for when this fails. 
     return run_ID_primer_dictionary
 
+def write_formatted_entries(dictionary,file_name):
+    
+    with open(file_name,"w") as f:
+        for char in dictionary:
+            f.write(char)
+    f.close()
 
 ## Begin script
 # Read file, input is a .xlsx file
 file_name = str(sys.argv[1])
-primer_option = str(sys.argv[2])
-reverse_complement_option = str(sys.argv[3])
+directory = str(sys.argv[2])
+
+forward_dic = str(build_dictionary(file_name,"forward_primers",False))
+rc_forward_dic = str(build_dictionary(file_name,"forward_primers",True))
+reverse_dic =str(build_dictionary(file_name,"reverse_primers",False))
+rc_reverse_dic = str(build_dictionary(file_name,"reverse_primers",True))
+
+adapter_r_dic = str(build_dictionary(file_name,"adapter_sequence_reverse",False))
+rc_adapter_r_dic = str(build_dictionary(file_name,"adapter_sequence_reverse",True))
+adapter_f_dic = str(build_dictionary(file_name,"adapter_sequence_forward ",False))
+rc_adapter_f_dic = str(build_dictionary(file_name,"adapter_sequence_forward ",True))
 
 
+write_formatted_entries(forward_dic,directory + "forward_dictionary.txt")
+write_formatted_entries(reverse_dic,directory + "reverse_dictionary.txt")
+write_formatted_entries(rc_forward_dic,directory + "reverse_complement_forward_dictionary.txt")
+write_formatted_entries(rc_reverse_dic,directory + "reverse_complement_reverse_dictionary.txt")
 
-test_dic = build_dictionary(file_name,primer_option,reverse_complement_option)
+write_formatted_entries(adapter_r_dic,directory + "adapter_reverse_dictionary.txt")
+write_formatted_entries(rc_adapter_r_dic,directory + "reverse_complement_adapter_reverse_dictionary.txt")
+write_formatted_entries(adapter_f_dic,directory + "adapter_forward_dictionary.txt")
+write_formatted_entries(rc_adapter_f_dic,directory + "reverse_complement_adapter_forward_dictionary.txt")
 
-print(test_dic)
+print(adapter_f_dic)
         
-# # Create dictionary, where run_id is key, and primers are values
-# size = len(clean_forward_primers)
-# run_ID_forward_dic = {run_ID[i]:clean_forward_primers[i] for i in range(size)}
-# run_ID_reverse_dic = {run_ID[i]:clean_reverse_primers[i] for i in range(size)}
-# run_ID_rc_forward_dic =  {run_ID[i]:clean_rc_forward_primers[i] for i in range(size)}
-# run_ID_rc_reverse_dic = {run_ID[i]:clean_rc_reverse_primers[i] for i in range(size)}
-
