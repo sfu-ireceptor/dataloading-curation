@@ -54,8 +54,11 @@ def clean_up_primers(file_name,primer_type):
     # Get primers
     primer = handle_primers(file_name,primer_type)
     
-    # Split them into an array
-    primer_split = [item.split(" ") for item in primer]
+    if type(primer[0])==float:
+        # Split them into an array
+        primer_split = [primer[i].split(", ") for i in range(1,len(primer))]
+    else:
+        primer_split = [primer[i].split(", ") for i in range(0,len(primer))]
     
     # Clean them up
     clean_primer_split = [[item[i] for i in range(len(item)) if item[i].isalpha() ] for item in primer_split]
@@ -89,24 +92,36 @@ def build_dictionary(file_name,primer_type,rc_option):
     
     # get right sheet
     metadata = get_metadata_sheet(file_name)
+    
     # identify run_ID
     run_ID = [item for item in metadata['run_id']]
+    
+    if type(run_ID[0])==float:
+        
+        size_runID = len(run_ID)
+        new_runID = [run_ID[i] for i in range(1,size_runID)]
+        
+    else:
+        size_runID = len(run_ID)
+        new_runID = [run_ID[i] for i in range(0,size_runID)]
+        
+    
     # Do we want reverse complement?
     if rc_option=="False": 
         # No
         clean_primer = clean_up_primers(file_name,primer_type)
-       
     elif rc_option=="True":
         # Yes
         clean_primer = reverse_complement(file_name,primer_type)
-        
-    
+            
     #check sizes match:
-    size_runID, size_cleanprimer = len(run_ID),len(clean_primer)
+    size_runID, size_cleanprimer = len(new_runID),len(clean_primer)
     
     if size_runID==size_cleanprimer:
         
-        run_ID_primer_dictionary = {run_ID[i]:clean_primer[i] for i in range(size_runID)}
+        run_ID_primer_dictionary = {new_runID[i]:clean_primer[i] for i in range(size_runID)}
+    else:
+        print(size_runID,size_cleanprimer)
         
     # Need to develop test for when this fails. 
     return run_ID_primer_dictionary
