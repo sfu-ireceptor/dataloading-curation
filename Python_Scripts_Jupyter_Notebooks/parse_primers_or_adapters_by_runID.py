@@ -75,7 +75,7 @@ def reverse_complement(file_name,primer_type):
     # get reverse complement of each entry, for each array 
     rc_clean_primer = [[Bio.Seq.reverse_complement(clean_primer[j][i])\
                             for i in range(len(clean_primer[j]))] for j in range(size)]
-    
+
     return rc_clean_primer
 
 # This function takes as input an Excel spreadsheet, a column name containing either primers or adapters and True or False
@@ -92,12 +92,14 @@ def build_dictionary(file_name,primer_type,rc_option):
     # identify run_ID
     run_ID = [item for item in metadata['run_id']]
     # Do we want reverse complement?
-    if rc_option==False: 
+    if rc_option=="False": 
         # No
         clean_primer = clean_up_primers(file_name,primer_type)
-    else:
+       
+    elif rc_option=="True":
         # Yes
         clean_primer = reverse_complement(file_name,primer_type)
+        
     
     #check sizes match:
     size_runID, size_cleanprimer = len(run_ID),len(clean_primer)
@@ -113,8 +115,12 @@ def build_dictionary(file_name,primer_type,rc_option):
 ## Begin script
 # Read file, input is a .xlsx file
 file_name = str(sys.argv[1])
+primer_option = str(sys.argv[2])
+reverse_complement_option = str(sys.argv[3])
 
-test_dic = build_dictionary(file_name,"forward_primers",True)
+
+
+test_dic = build_dictionary(file_name,primer_option,reverse_complement_option)
 
 print(test_dic)
         
