@@ -157,4 +157,4 @@ rc_adapter_f_dic = build_dictionary(file_name,"adapter_sequence_forward ",True)
 write_formatted_entries(forward_dic,directory,key,adapter_type,"_" +output_extra_info )
 
 # Sample use
-# parse_primers_or_adapters_by_runID.py "./Metadata_spreadsheets/Zvy/Zvyagin_Mamedov_2017.xlsx" "./Metadata_spreadsheets/Zvy/" "SRR3176830" "-g" "forward.txt"
+# python parse_primers_or_adapters_by_runID.py "./Metadata_spreadsheets/Zvy/Zvyagin_Mamedov_2017.xlsx" "./Metadata_spreadsheets/Zvy/" "SRR3176830" "-g" "forward.txt"
