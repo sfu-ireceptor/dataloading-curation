@@ -122,38 +122,34 @@ def build_dictionary(file_name,primer_type,rc_option):
     # Need to develop test for when this fails. 
     return run_ID_primer_dictionary
 
-def write_formatted_entries(dictionary,file_name):
+def write_formatted_entries(dictionary,file_directory,key,adapter_type,output_filename):
     
-    with open(file_name,"w") as f:
-        for char in dictionary:
-            f.write(char)
+    with open(file_directory + key + output_filename,"w") as f:
+        for item in dictionary[key]:
+            f.write(" " + str(adapter_type) + " " + item)
     f.close()
 
 ## Begin script
 # Read file, input is a .xlsx file
 file_name = str(sys.argv[1])
 directory = str(sys.argv[2])
+key = str(sys.argv[3])
+adapter_type = str(sys.argv[4])
+output_extra_info = str(sys.argv[5])
 
-forward_dic = str(build_dictionary(file_name,"forward_primers",False))
-rc_forward_dic = str(build_dictionary(file_name,"forward_primers",True))
-reverse_dic =str(build_dictionary(file_name,"reverse_primers",False))
-rc_reverse_dic = str(build_dictionary(file_name,"reverse_primers",True))
+forward_dic = build_dictionary(file_name,"forward_primers",False)
+rc_forward_dic = build_dictionary(file_name,"forward_primers",True)
+reverse_dic = build_dictionary(file_name,"reverse_primers",False)
+rc_reverse_dic = build_dictionary(file_name,"reverse_primers",True)
 
-adapter_r_dic = str(build_dictionary(file_name,"adapter_sequence_reverse",False))
-rc_adapter_r_dic = str(build_dictionary(file_name,"adapter_sequence_reverse",True))
-adapter_f_dic = str(build_dictionary(file_name,"adapter_sequence_forward ",False))
-rc_adapter_f_dic = str(build_dictionary(file_name,"adapter_sequence_forward ",True))
+adapter_r_dic = build_dictionary(file_name,"adapter_sequence_reverse",False)
+rc_adapter_r_dic = build_dictionary(file_name,"adapter_sequence_reverse",True)
+adapter_f_dic = build_dictionary(file_name,"adapter_sequence_forward ",False)
+rc_adapter_f_dic = build_dictionary(file_name,"adapter_sequence_forward ",True)
 
 
-write_formatted_entries(forward_dic,directory + "forward_dictionary.txt")
-write_formatted_entries(reverse_dic,directory + "reverse_dictionary.txt")
-write_formatted_entries(rc_forward_dic,directory + "reverse_complement_forward_dictionary.txt")
-write_formatted_entries(rc_reverse_dic,directory + "reverse_complement_reverse_dictionary.txt")
+write_formatted_entries(forward_dic,directory,key,adapter_type,"_" +output_extra_info )
 
-write_formatted_entries(adapter_r_dic,directory + "adapter_reverse_dictionary.txt")
-write_formatted_entries(rc_adapter_r_dic,directory + "reverse_complement_adapter_reverse_dictionary.txt")
-write_formatted_entries(adapter_f_dic,directory + "adapter_forward_dictionary.txt")
-write_formatted_entries(rc_adapter_f_dic,directory + "reverse_complement_adapter_forward_dictionary.txt")
+# Sample use 
+# python parse_primers_or_adapters_by_runID.py "./Metadata_spreadsheets/Zvy/Zvyagin_Mamedov_2017.xlsx" "./Metadata_spreadsheets/Zvy/" "SRR3176830" "-g" "forward.txt"
 
-print(adapter_f_dic)
-        
