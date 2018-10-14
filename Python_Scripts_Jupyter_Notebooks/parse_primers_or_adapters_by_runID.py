@@ -57,15 +57,22 @@ def handle_primers(file_name,primer_type):
 # The output is an array with "clean" primers - some primers have spaces or other characters in between that should not be there
 def clean_up_primers(file_name,primer_type):
     
+    # NEED TO DESIGN TEST THAT DEALS WITH NON UNIFORM ENTRIES, for example, when 
+    # there are NaN values in every other entry
+    
     # Get primers
     primer = handle_primers(file_name,primer_type)
     
-    if type(primer[0])==float:
-        # Split them into an array
-        primer_split = [primer[i].split(" ") for i in range(1,len(primer))]
-    else:
-        primer_split = [primer[i].split(" ") for i in range(0,len(primer))]
+    number_primers = len(primer)
     
+    primer_split = []
+    
+    for i in range(number_primers):
+        if type(primer[i])==float:
+            primer_split.append(" ")
+        else:
+            primer_split.append(primer[i].split(" "))
+            
     # Clean them up
     clean_primer_split = [[item[i] for i in range(len(item)) if item[i].isalpha() ] for item in primer_split]
     
