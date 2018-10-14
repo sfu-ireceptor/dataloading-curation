@@ -1,7 +1,7 @@
 ## Script Author: Laura Gutierrez Funderburk
 ## Supervised by: Dr. Felix Breden, Dr. Jamie Scott, Dr. Brian Corrie
 ## Created on October 9
-## Last modified on October 9
+## Last modified on October 14
 
 
 # Import libraries
@@ -131,14 +131,33 @@ def build_dictionary(file_name,primer_type,rc_option):
     # Need to develop test for when this fails. 
     return run_ID_primer_dictionary
 
+# This function takes as input a dictionary whose keys are runIDs and whose values are either
+# forward/reverse primers or forward/reverse adapters, a directory to output the content, a key (a run ID), 
+# the adapter type (-g,-a,-G,-A) appropriate for cutadapt, and extra information "output_filename"
+
+# This function writes a string of adapters or primers separated by the adapter_type character
+
+## For example, if the forward adapters associated with run ID SRR3500416 are 
+
+# AGGAGCTCCAGATGAAAGACTC GCTCATCCTCCAGGTGCGGGAG, then this function will write on a file the string
+
+#  -g AGGAGCTCCAGATGAAAGACTC -g GCTCATCCTCCAGGTGCGGGAG
 def write_formatted_entries(dictionary,file_directory,key,adapter_type,output_filename):
+    
+    # Open file to write content on
     with open(file_directory + key + output_filename,"w") as f:
+        # For each entry in the array stored under dictionary[key]
         for item in dictionary[key]:
+            # Write string for cutadapt command 
             f.write(" " + str(adapter_type) + " " + str(item))
         f.close()
 
     
-    
+# This function will take as input an integer between 1 and 8, and it will output either
+# An array with column names and a boolean value or a string indicating wrong option
+
+# The column names correspond to forward/reverse primers or adapters, the boolean value indicates whether
+# we want the reverse complement of the primers/adapters
 def switch_menu(argument):
     switcher = {
         1: ["forward_primers",False],
