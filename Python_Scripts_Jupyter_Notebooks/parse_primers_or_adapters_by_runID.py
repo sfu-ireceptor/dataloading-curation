@@ -1,7 +1,7 @@
 ## Script Author: Laura Gutierrez Funderburk
 ## Supervised by: Dr. Felix Breden, Dr. Jamie Scott, Dr. Brian Corrie
 ## Created on October 9
-## Last modified on October 9
+## Last modified on October 14
 
 
 # Import libraries
@@ -62,9 +62,9 @@ def clean_up_primers(file_name,primer_type):
     
     if type(primer[0])==float:
         # Split them into an array
-        primer_split = [primer[i].split(", ") for i in range(1,len(primer))]
+        primer_split = [primer[i].split(" ") for i in range(1,len(primer))]
     else:
-        primer_split = [primer[i].split(", ") for i in range(0,len(primer))]
+        primer_split = [primer[i].split(" ") for i in range(0,len(primer))]
     
     # Clean them up
     clean_primer_split = [[item[i] for i in range(len(item)) if item[i].isalpha() ] for item in primer_split]
@@ -113,48 +113,66 @@ def build_dictionary(file_name,primer_type,rc_option):
     if rc_option==False: 
         # No
         clean_primer = clean_up_primers(file_name,primer_type)
+        #print(clean_primer)
     elif rc_option==True:
         # Yes
         clean_primer = reverse_complement(file_name,primer_type)
             
     #check sizes match:
     size_runID, size_cleanprimer = len(new_runID),len(clean_primer)
+    #print(size_runID,size_cleanprimer)
     
     if size_runID==size_cleanprimer:
         
         run_ID_primer_dictionary = {new_runID[i]:clean_primer[i] for i in range(size_runID)}
+        
     else:
         print(size_runID,size_cleanprimer)
     # Need to develop test for when this fails. 
     return run_ID_primer_dictionary
 
 def write_formatted_entries(dictionary,file_directory,key,adapter_type,output_filename):
-    
     with open(file_directory + key + output_filename,"w") as f:
         for item in dictionary[key]:
-            f.write(" " + str(adapter_type) + " " + item)
-    f.close()
+            f.write(" " + str(adapter_type) + " " + str(item))
+        f.close()
 
+    
+    
+def switch_menu(argument):
+    switcher = {
+        1: ["forward_primers",False],
+        2: ["forward_primers",True],
+        3: ["reverse_primers",False],
+        4: ["reverse_primers",True],
+        5: ["adapter_sequence_reverse",False],
+        6: ["adapter_sequence_reverse",True],
+        7: ["adapter_sequence_forward ",False],
+        8: ["adapter_sequence_forward ",True]
+    }
+    
+    return switcher.get(argument, "Invalid option was chosen, please select a number between 1 and 8")
+    
 ## Begin script
 # Read file, input is a .xlsx file
 file_name = str(sys.argv[1])
 directory = str(sys.argv[2])
 key = str(sys.argv[3])
-adapter_type = str(sys.argv[4])
-output_extra_info = str(sys.argv[5])
+option = int(sys.argv[4])
+adapter_type = str(sys.argv[5])
+output_extra_info = str(sys.argv[6])
 
-forward_dic = build_dictionary(file_name,"forward_primers",False)
-rc_forward_dic = build_dictionary(file_name,"forward_primers",True)
-reverse_dic = build_dictionary(file_name,"reverse_primers",False)
-rc_reverse_dic = build_dictionary(file_name,"reverse_primers",True)
+chosen_option = switch_menu(option)
 
-adapter_r_dic = build_dictionary(file_name,"adapter_sequence_reverse",False)
-rc_adapter_r_dic = build_dictionary(file_name,"adapter_sequence_reverse",True)
-adapter_f_dic = build_dictionary(file_name,"adapter_sequence_forward ",False)
-rc_adapter_f_dic = build_dictionary(file_name,"adapter_sequence_forward ",True)
+if chosen_option=='Invalid option was chosen, please select a number between 1 and 8':
+    print("Invalid option was chosen, please select a number between 1 and 8 \nPlease enter your command again")
 
+else:
 
-write_formatted_entries(forward_dic,directory,key,adapter_type,"_" +output_extra_info )
+    dictionary = build_dictionary(file_name,chosen_option[0],chosen_option[1])
+    
+    write_formatted_entries(dictionary,directory,key,adapter_type,output_extra_info)
+
 
 # Sample use
 # python parse_primers_or_adapters_by_runID.py "./Metadata_spreadsheets/Zvy/Zvyagin_Mamedov_2017.xlsx" "./Metadata_spreadsheets/Zvy/" "SRR3176830" "-g" "forward.txt"
