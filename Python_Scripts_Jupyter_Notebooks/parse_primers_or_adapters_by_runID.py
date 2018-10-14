@@ -1,7 +1,7 @@
 ## Script Author: Laura Gutierrez Funderburk
 ## Supervised by: Dr. Felix Breden, Dr. Jamie Scott, Dr. Brian Corrie
 ## Created on October 9
-## Last modified on October 14
+## Last modified on October 9
 
 
 # Import libraries
@@ -175,4 +175,4 @@ else:
 
 
 # Sample use
-# python parse_primers_or_adapters_by_runID.py "./Metadata_spreadsheets/Zvy/Zvyagin_Mamedov_2017.xlsx" "./Metadata_spreadsheets/Zvy/" "SRR3176830" "-g" "forward.txt"
+# python parse_primers_or_adapters_by_runID.py "./Metadata_spreadsheets/Mun/Munson_2016.xlsx" "./Metadata_spreadsheets/Mun/" "SRR3500416" 1 "-g" "_primer_forward.txt"
