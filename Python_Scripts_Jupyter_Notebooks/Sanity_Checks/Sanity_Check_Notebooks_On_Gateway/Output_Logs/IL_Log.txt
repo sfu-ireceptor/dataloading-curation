@@ -1,6 +1,6 @@
 Test Sequence Metadata
-Lab: Von Budingen Lab
-Perform tests on ./CSV_FILES/VBL_Seq.csv
+Lab: Immunogenomics Lab
+Perform tests on ./CSV_FILES/IL_Seq.csv
 
 
 Begin Test 1: 
@@ -10,19 +10,21 @@ End Test 1
 
 Begin Test 2: 
 Verify All entries contain either IG or TR names
-Verifying V-Gene Column ------------------------------------------------>PASSED
-Verifying J-Gene Column ------------------------------------------------>PASSED
+Verifying V-Gene Column ------------------------------------------------>FAILED
+ Please verify entries [[['IGHV5-17*02', 'Musmus'], 'Musmus'], [['IGHV1-9*01', 'Musmus'], 'Musmus'], [['IGHV1-9*01', 'Musmus'], 'Musmus'], [['IGHV1-87*01', 'Musmus'], 'Musmus'], [['IGHV1-81*01', 'IGHV1-77*01', 'Musmus'], 'Musmus'], [['IGHV3-2*02', 'Musmus'], 'Musmus'], [['Musmus', 'IGHV3-6*02'], 'Musmus'], [['IGHV1-87*01', 'Musmus'], 'Musmus'], [['IGHV1-62-2*01', 'IGHV1-71*01', 'Musmus'], 'Musmus'], [['IGHV10-1*02', 'IGHV10S3*01', 'Musmus'], 'Musmus'], [['Musmus', 'IGHV3-6*02'], 'Musmus'], [['Musmus', 'IGHV1-82*01'], 'Musmus'], [['IGHV3-8*02', 'Musmus'], 'Musmus'], [['IGHV1-4*01', 'Musmus'], 'Musmus'], [['IGHV5-6*03', 'IGHV5-6-1*01', 'IGHV5-6*01', 'IGHV5-6*02', 'Musmus'], 'Musmus'], [['IGHV9-2-1*01', 'Musmus'], 'Musmus'], [['Musmus', 'IGHV3-6*02'], 'Musmus'], [['IGHV5-9-1*01', 'Musmus'], 'Musmus'], [['IGHV5-6-1*01', 'IGHV5-6*01', 'Musmus'], 'Musmus'], [['Musmus', 'IGHV1-82*01'], 'Musmus'], [['IGHV3-2*02', 'Musmus'], 'Musmus'], [['IGHV5-6-1*01', 'IGHV5-6*01', 'Musmus'], 'Musmus'], [['Musmus', 'IGHV3-6*02'], 'Musmus']]
+Verifying J-Gene Column ------------------------------------------------>FAILED
+ Please verify entries [[['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ2*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ2*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ3*01', 'Musmus'], 'Musmus'], [['IGHJ4*01', 'Musmus'], 'Musmus']]
 Verifying D-Gene Column ------------------------------------------------>FAILED 
 Please verify entries
- [[['IGHD4-11*01', 'ORF'], 'ORF'], [['IGHD4-11*01', 'ORF'], 'ORF'], [['IGHD4-11*01', 'ORF'], 'ORF'], [['ORF', 'IGHD1-14*01'], 'ORF'], [['IGHD4-11*01', 'ORF'], 'ORF'], [['IGHD4-11*01', 'ORF'], 'ORF'], [['IGHD4-11*01', 'ORF'], 'ORF']]
+ [[['IGHD2-14*01', 'Musmus'], 'Musmus'], [['IGHD2-4*01', 'Musmus'], 'Musmus'], [['IGHD3-1*01', 'Musmus'], 'Musmus'], [['IGHD3-1*01', 'Musmus'], 'Musmus'], [['Musmus', 'IGHD2-1*01'], 'Musmus'], [['Musmus', 'IGHD2-1*01'], 'Musmus'], [['IGHD2-14*01', 'Musmus'], 'Musmus'], [['IGHD4-1*01', 'Musmus'], 'Musmus'], [['IGHD2-3*01', 'Musmus'], 'Musmus'], [['IGHD2-4*01', 'Musmus'], 'Musmus'], [['IGHD1-1*01', 'Musmus'], 'Musmus'], [['IGHD2-3*01', 'Musmus'], 'Musmus'], [['IGHD2-4*01', 'Musmus'], 'Musmus'], [['IGHD2-4*01', 'Musmus'], 'Musmus'], [['IGHD3-3*01', 'Musmus'], 'Musmus'], [['IGHD2-4*01', 'Musmus'], 'Musmus'], [['IGHD1-1*01', 'Musmus'], 'Musmus'], [['IGHD2-4*01', 'Musmus'], 'Musmus'], [['IGHD1-1*01', 'Musmus'], 'Musmus'], [['Musmus', 'IGHD2-1*01'], 'Musmus'], [['IGHD2-4*01', 'Musmus'], 'Musmus'], [['IGHD2-4*01', 'Musmus'], 'Musmus']]
 End Test 2
 
 
 Begin Test 3
 Identify whether this is an 'IG' or 'TR' study
-Total number of 'IG' occurrences in V-gene: 38
-Total number of 'IG' occurrences in J-gene: 25
-Total number of 'IG' occurrences in D-gene: 25
+Total number of 'IG' occurrences in V-gene: 31
+Total number of 'IG' occurrences in J-gene: 23
+Total number of 'IG' occurrences in D-gene: 22
 Total number of 'TR' occurrences in V-gene: 0
 Total number of 'TR' occurrences in J-gene: 0
 Total number of 'TR' occurrences in D-gene: 0
@@ -33,28 +35,28 @@ V-gene
     Number of 'IG' occurrences  Number of 'TR' occurrences
 0                            1                           0
 1                            1                           0
-2                            4                           0
+2                            1                           0
 3                            1                           0
-4                            4                           0
-5                            2                           0
+4                            2                           0
+5                            1                           0
 6                            1                           0
 7                            1                           0
 8                            2                           0
 9                            2                           0
-10                           2                           0
+10                           1                           0
 11                           1                           0
 12                           1                           0
 13                           1                           0
-14                           1                           0
-15                           1                           0
-16                           3                           0
+14                           4                           0
+15                           0                           0
+16                           1                           0
 17                           1                           0
-18                           2                           0
-19                           1                           0
+18                           1                           0
+19                           2                           0
 20                           1                           0
 21                           1                           0
-22                           1                           0
-23                           1                           0
+22                           0                           0
+23                           2                           0
 24                           1                           0
 J-gene
     Number of 'IG' occurrences  Number of 'TR' occurrences
@@ -73,14 +75,14 @@ J-gene
 12                           1                           0
 13                           1                           0
 14                           1                           0
-15                           1                           0
+15                           0                           0
 16                           1                           0
 17                           1                           0
 18                           1                           0
 19                           1                           0
 20                           1                           0
 21                           1                           0
-22                           1                           0
+22                           0                           0
 23                           1                           0
 24                           1                           0
 D-gene
@@ -89,7 +91,7 @@ D-gene
 1                            1                           0
 2                            1                           0
 3                            1                           0
-4                            1                           0
+4                            0                           0
 5                            1                           0
 6                            1                           0
 7                            1                           0
@@ -100,14 +102,14 @@ D-gene
 12                           1                           0
 13                           1                           0
 14                           1                           0
-15                           1                           0
+15                           0                           0
 16                           1                           0
 17                           1                           0
 18                           1                           0
 19                           1                           0
 20                           1                           0
 21                           1                           0
-22                           1                           0
+22                           0                           0
 23                           1                           0
 24                           1                           0
 End Test 3
