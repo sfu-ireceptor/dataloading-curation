@@ -58,6 +58,8 @@ echo "End Python: Generate cutadapt input"
 ## Fetch Cutadapt Input ##
 ###########################
 
+cd ${output_directory}
+
 forward_primers=awk '{print}' ${run_ID}_primer_forward.txt
 
 ########################### 
