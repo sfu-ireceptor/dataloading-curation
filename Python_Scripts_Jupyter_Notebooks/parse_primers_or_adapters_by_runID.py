@@ -52,13 +52,12 @@ def handle_primers(file_name,primer_type):
     return primer
 
 
-def what_char_separates_primers(file_name,primer_type):
 
 # This function takes as input an Excel spreadsheet and a column name containing either primers or adapters, for example 
 # "./Metadata_spreadsheets/Mun/Munson_2016.xlsx","forward_primers" corresponds to the spreadsheet name and the column of interest
 
 # The output is an array with "clean" primers - some primers have spaces or other characters in between that should not be there
-def clean_up_primers(file_name,primer_type):
+def clean_up_primers(file_name,primer_type,separated_by):
     
     # NEED TO DESIGN TEST THAT DEALS WITH NON UNIFORM ENTRIES, for example, when 
     # there are NaN values in every other entry
@@ -74,7 +73,7 @@ def clean_up_primers(file_name,primer_type):
         if type(primer[i])==float:
             primer_split.append(" ")
         else:
-            primer_split.append(primer[i].split(" "))
+            primer_split.append(primer[i].split(str(separated_by)))
             
     # Clean them up
     clean_primer_split = [[item[i] for i in range(len(item)) if item[i].isalpha() ] for item in primer_split]
@@ -85,10 +84,10 @@ def clean_up_primers(file_name,primer_type):
 # "./Metadata_spreadsheets/Mun/Munson_2016.xlsx","forward_primers" corresponds to the spreadsheet name and the column of interest
 
 # The output is an array whose entries are the reverse complement of the entries found in the corresponding column
-def reverse_complement(file_name,primer_type):
+def reverse_complement(file_name,primer_type,separated_by):
     
     #get clean primers
-    clean_primer = clean_up_primers(file_name,primer_type)
+    clean_primer = clean_up_primers(file_name,primer_type,separated_by)
     # count length of array once
     size = len(clean_primer)
     # get reverse complement of each entry, for each array 
@@ -104,7 +103,7 @@ def reverse_complement(file_name,primer_type):
 
 # The output is a dictionary whose keys are run_id's and whose values are the corresponding primers, 
 
-def build_dictionary(file_name,primer_type,rc_option):
+def build_dictionary(file_name,primer_type,rc_option,separated_by):
     # get right sheet
     metadata = get_metadata_sheet(file_name)
     
@@ -114,7 +113,7 @@ def build_dictionary(file_name,primer_type,rc_option):
     if type(run_ID[0])==float:
         
         size_runID = len(run_ID)
-        new_runID = [run_ID[i] for i in range(1,size_runID)]  
+        new_runID = [run_ID[i] for i in range(0,size_runID)]  
     else:
         size_runID = len(run_ID)
         new_runID = [run_ID[i] for i in range(0,size_runID)]
@@ -122,11 +121,11 @@ def build_dictionary(file_name,primer_type,rc_option):
     # Do we want reverse complement?
     if rc_option==False: 
         # No
-        clean_primer = clean_up_primers(file_name,primer_type)
+        clean_primer = clean_up_primers(file_name,primer_type,separated_by)
         #print(clean_primer)
     elif rc_option==True:
         # Yes
-        clean_primer = reverse_complement(file_name,primer_type)
+        clean_primer = reverse_complement(file_name,primer_type,separated_by)
             
     #check sizes match:
     size_runID, size_cleanprimer = len(new_runID),len(clean_primer)
@@ -185,11 +184,12 @@ def switch_menu(argument):
 ## Begin script
 # Read file, input is a .xlsx file
 file_name = str(sys.argv[1])
-directory = str(sys.argv[2])
-key = str(sys.argv[3])
-option = int(sys.argv[4])
-adapter_type = str(sys.argv[5])
-output_extra_info = str(sys.argv[6])
+separated_by = str(sys.argv[2])
+directory = str(sys.argv[3])
+key = str(sys.argv[4])
+option = int(sys.argv[5])
+adapter_type = str(sys.argv[6])
+output_extra_info = str(sys.argv[7])
 
 chosen_option = switch_menu(option)
 
@@ -198,10 +198,10 @@ if chosen_option=='Invalid option was chosen, please select a number between 1 a
 
 else:
 
-    dictionary = build_dictionary(file_name,chosen_option[0],chosen_option[1])
+    dictionary = build_dictionary(file_name,chosen_option[0],chosen_option[1],separated_by)
     
     write_formatted_entries(dictionary,directory,key,adapter_type,output_extra_info)
 
 
 # Sample use
-# python parse_primers_or_adapters_by_runID.py "./Metadata_spreadsheets/Mun/Munson_2016.xlsx" "./Metadata_spreadsheets/Mun/" "SRR3500416" 1 "-g" "_primer_forward.txt"
+# python parse_primers_or_adapters_by_runID.py "./Metadata_spreadsheets/Mun/Munson_2016.xlsx" ", "  "./Metadata_spreadsheets/Mun/" "SRR3500416" 1 "-g" "_primer_forward.txt"
