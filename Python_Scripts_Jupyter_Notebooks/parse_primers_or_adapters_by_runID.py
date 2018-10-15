@@ -51,6 +51,9 @@ def handle_primers(file_name,primer_type):
     
     return primer
 
+
+def what_char_separates_primers(file_name,primer_type):
+
 # This function takes as input an Excel spreadsheet and a column name containing either primers or adapters, for example 
 # "./Metadata_spreadsheets/Mun/Munson_2016.xlsx","forward_primers" corresponds to the spreadsheet name and the column of interest
 
