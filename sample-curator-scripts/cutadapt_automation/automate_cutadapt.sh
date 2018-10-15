@@ -8,7 +8,7 @@
 ##Script Author: Laura Gutierrez Funderburk
 ##Supervised by: Dr. Felix Breden, Dr. Jamie Scott, Dr. Brian Corrie
 ##Created on: October 9 2018
-##Last modified on: October 9 2018
+##Last modified on: October 14 2018
 
 echo "Begin Script"
 
@@ -24,7 +24,7 @@ script=/home/lgutierr/projects/rpp-breden-ab/lgutierr/SCRIPTS/
 
 # Metadata Directory
 metadata_ZVY=/home/lgutierr/projects/rpp-breden-ab/ireceptor/curation/cancer_data_and_papers/zvyagin_mamedov_2017
-output_directory=/home/lgutierr/projects/rpp-breden-ab/ireceptor/curation/cancer_data_and_papers/zvyagin_mamedov_2017/automating_cutadapt/
+output_directory=/home/lgutierr/projects/rpp-breden-ab/lgutierr/OUTPUT/AUTOMATE/METADATA/Zvy/
 
 #######################
 # Array File Entries ##
@@ -38,9 +38,9 @@ FASTA_file=`awk -F_ '{print $2}' runID_in_fastaHeader | head -$SLURM_ARRAY_TASK_
 echo ${run_ID}
 echo ${FASTA_file}
 
-#######################
-# Generate cutadapt   #
-#######################
+###########################
+# Generate cutadapt input #
+###########################
 
 cd ${script}
 
@@ -48,9 +48,28 @@ echo "Begin Python: Generate cutadapt input"
 
 source ~/ENV/bin/activate
 
-python parse_primers_or_adapters_by_runID.py ${metadata_ZVY}/papers/"Zvyagin_Mamedov_2017.xlsx" ${output_directory} ${run_ID} "-g" "forward.txt"
+python parse_primers_or_adapters_by_runID.py ${metadata_ZVY}/papers/"Zvyagin_Mamedov_2017.xlsx" ", "  ${output_directory} ${run_ID} 1 "-g" "_primer_forward.txt"
 
 deactivate
 
 echo "End Python: Generate cutadapt input"
 
+###########################
+## Fetch Cutadapt Input ##
+###########################
+
+forward_primers=awk '{print}' ${run_ID}_primer_forward.txt
+
+########################### 
+## Feed cutadapt command ##  
+########################### 
+
+echo "Begin cutadapt"
+
+source /home/lgutierr/projects/rpp-breden-ab/ireceptor/bin/CURATOR/bin/activate
+
+echo ${forward_primers}
+
+cutadapt ${forward_primers} --info-file ${run_ID}_info.txt --match-read-wildcards --overlap 10 -n 2 --length-tag="length=" -o primers_${run_ID}_1.fastq -p primers_${run_ID}_2.fastq ${run_ID}_1.fastq ${run_ID}_2.fastq
+
+echo "End cutadapt"
