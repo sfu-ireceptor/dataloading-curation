@@ -8,6 +8,8 @@ import json
 import csv
 import pandas as pd
 
+# READ FROM URL
+# EXAMPLE JSON_Content = "https://ipa.ireceptor.org/v2/samples" or JSON_Content = "https://ipa.ireceptor.org/v2/sequences_summary"
 
 JSON_Content = str(sys.argv[1])
 
@@ -17,16 +19,6 @@ min_AIRR_std = "/home/lgutierrezfunderburk/Documents/Notebooks/iReceptor/airr-st
 df_min_AIRR_std = pd.read_excel(min_AIRR_std)
 
 min_std = [item for item in df_min_AIRR_std["AIRR Formats WG field name"]]
-
-study = min_std[0:10]
-subject = min_std[10:22]
-diag_int = min_std[22:30]
-sample = min_std[30:38]
-process = min_std[38:66]
-data_raw_reads = min_std[66:67]
-process = min_std[67:73]
-data_proc_seq = min_std[73:82]
-data_proc_seq
 
 # Need stronger testing for user input
 def type_of_entry(JSON_Content):
@@ -76,3 +68,29 @@ def get_dataframes(JSON_Content):
         dataframes.insert(0,df)
         dataframes.insert(1,df)
     return dataframes
+
+"""BEGIN SCRIPT"""
+
+[df_items,df_sum] = get_dataframes(JSON_Content)
+
+
+check_min_std_df_items = [[item in df_items.columns,item] for item in min_std]
+check_min_std_df_summary = [[item in df_summary.columns,item] for item in min_std]
+count_items = 0
+for i in range(len(check_min_std_df_items)):
+    if True in check_min_std_df_items[i]:
+        count_items +=1
+
+count_sum = 0
+for i in range(len(check_min_std_df_summary)):
+    if True in check_min_std_df_summary[i]:
+        count_sum +=1
+
+message_arr = []
+message_arr.append("Begin Sanity Check on API\n")
+message_arr.append("Check performed on search " + str(JSON_Content) + "\n")
+message_arr.append("Sanity Check: AIRR minimum standards\n")
+message_arr.append("Summary\n")
+message_arr.append("Items category: " + str(count_items) + " out of " + str(len(min_std)) + " standards were met\n")
+message_arr.append("Summary category: " + str(count_sum) + " out of " + str(len(min_std)) + " standards were met\n")
+
