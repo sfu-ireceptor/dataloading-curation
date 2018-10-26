@@ -2,20 +2,22 @@
 #SBATCH --time=05:00:00
 #SBATCH --mem=96000M
 #SBATCH --account=rpp-breden-ab
-#SBATCH --array=1-99%99
+###################################################----------------------------------------------------------->NUMBER OF JOBS IN ARRAY DEPENDS ON NUMBER OF ROWS IN METADATA SPREADHSEET
+#SBATCH --array=1-10%10
+###################################################----------------------------------------------------------->CHANGE THIS DIRECTORY
 #SBATCH --output=/home/lgutierr/projects/rpp-breden-ab/lgutierr/OUTPUT/AUTOMATE/cutadapt/cutadapt_input__%J.out
 
 ##Script Author: Laura Gutierrez Funderburk
 ##Supervised by: Dr. Felix Breden, Dr. Jamie Scott, Dr. Brian Corrie
 ##Created on: October 9 2018
-##Last modified on: October 14 2018
+##Last modified on: October 25 2018
 
 echo "Begin Script"
 
 #######################
 ##### Directories #####
 #######################
-
+###################################################----------------------------------------------------------->CHANGE THESE DIRECTORIES
 # Call array data file
 array_data=/home/lgutierr/projects/rpp-breden-ab/lgutierr/SCRIPTS/Array_JOBS/Zvy/
 
@@ -58,9 +60,9 @@ echo "End Python: Generate cutadapt input"
 ## Fetch Cutadapt Input ##
 ###########################
 
-cd ${output_directory}
+forward_primers=`awk '{print}' ${output_directory}${run_ID}_primer_forward.txt`
 
-forward_primers=awk '{print}' ${run_ID}_primer_forward.txt
+ 
 
 ########################### 
 ## Feed cutadapt command ##  
