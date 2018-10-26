@@ -1,11 +1,9 @@
 #!/bin/bash
-#SBATCH --time=05:00:00
+#SBATCH --time=00:30:00
 #SBATCH --mem=96000M
 #SBATCH --account=rpp-breden-ab
-###################################################----------------------------------------------------------->NUMBER OF JOBS IN ARRAY DEPENDS ON NUMBER OF ROWS IN METADATA SPREADHSEET
 #SBATCH --array=1-10%10
-###################################################----------------------------------------------------------->CHANGE THIS DIRECTORY
-#SBATCH --output=/home/lgutierr/projects/rpp-breden-ab/lgutierr/OUTPUT/AUTOMATE/cutadapt/cutadapt_input__%J.out
+#SBATCH --output=/home/lgutierr/projects/rpp-breden-ab/ireceptor/AUTOMATION_SCRIPTS/cutadapt_output/LOGS/Zvy/cutadapt_input__%J.out
 
 ##Script Author: Laura Gutierrez Funderburk
 ##Supervised by: Dr. Felix Breden, Dr. Jamie Scott, Dr. Brian Corrie
@@ -17,16 +15,18 @@ echo "Begin Script"
 #######################
 ##### Directories #####
 #######################
-###################################################----------------------------------------------------------->CHANGE THESE DIRECTORIES
+
 # Call array data file
-array_data=/home/lgutierr/projects/rpp-breden-ab/lgutierr/SCRIPTS/Array_JOBS/Zvy/
+array_data=/home/lgutierr/projects/rpp-breden-ab/ireceptor/AUTOMATION_SCRIPTS/cutadapt_scripts/Array_JOBS/Zvy/
 
 # Scripts directory
-script=/home/lgutierr/projects/rpp-breden-ab/lgutierr/SCRIPTS/
+script=/home/lgutierr/projects/rpp-breden-ab/ireceptor/AUTOMATION_SCRIPTS/cutadapt_scripts/
 
 # Metadata Directory
-metadata_ZVY=/home/lgutierr/projects/rpp-breden-ab/ireceptor/curation/cancer_data_and_papers/zvyagin_mamedov_2017
-output_directory=/home/lgutierr/projects/rpp-breden-ab/lgutierr/OUTPUT/AUTOMATE/METADATA/Zvy/
+metadata_ZVY=/home/lgutierr/projects/rpp-breden-ab/ireceptor/curation/cancer_data_and_papers/zvyagin_mamedov_2017/papers
+
+output_directory=/home/lgutierr/projects/rpp-breden-ab/ireceptor/AUTOMATION_SCRIPTS/cutadapt_output/METADATA/Zvy
+
 
 #######################
 # Array File Entries ##
@@ -70,7 +70,7 @@ forward_primers=`awk '{print}' ${output_directory}${run_ID}_primer_forward.txt`
 
 echo "Begin cutadapt"
 
-source /home/lgutierr/projects/rpp-breden-ab/ireceptor/bin/CURATOR/bin/activate
+#source /home/lgutierr/projects/rpp-breden-ab/ireceptor/bin/CURATOR/bin/activate
 
 echo ${forward_primers}
 
