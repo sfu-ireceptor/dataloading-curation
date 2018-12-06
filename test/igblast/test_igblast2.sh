@@ -1,5 +1,13 @@
 #!/bin/bash
 echo $PWD
-export PYTHONPATH=../../../scripts
-python $PYTHONPATH/dataloader.py -s -l $PWD -f toy_data_sample.csv
-python $PYTHONPATH/dataloader.py -a -l $PWD -f toy_data.tsv
+if [ -z "$PYTHONPATH" ];
+then
+    export PYTHONPATH=../../../scripts
+fi
+if [ -z "$CONFIGPATH" ];
+then
+    export CONFIGPATH=../../../config
+fi
+
+python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -s -l $PWD -f toy_data_sample.csv
+python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -a -l $PWD -f toy_data.tsv
