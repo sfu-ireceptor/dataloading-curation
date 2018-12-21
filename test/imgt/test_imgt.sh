@@ -10,5 +10,5 @@ then
 fi
 
 
-python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -s -l $PWD -f imgt_toy_sample.csv
-python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -i -l $PWD -f imgt_toy.zip
+python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -s -f imgt_toy/imgt_toy_sample.csv
+python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -i -f imgt_toy/SRR1298740.txz
