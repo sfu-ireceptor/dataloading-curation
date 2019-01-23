@@ -27,10 +27,11 @@ Both of these data sets are a subset of the data from the paper
 "Immunoglobulin class-switched B cells provide an active immune axis between CNS and periphery in multiple sclerosis" by Palanichamy et. al.
 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4176763/). The data sets were curated using the iReceptor Data Curation process listed here: http://www.ireceptor.org/curation.
 
-Both examples have a simple shell script that uses the iReceptor Data Loading module to load the data into an iReceptor Mongo repository. These shell scripts assume that the data and the data loading modules are components of the iReceptor Turnkey Repository platform.
+Both examples have a simple shell script that uses the iReceptor Data Loading module to load the data into an iReceptor Mongo repository. These shell scripts assume that the data and the data loading modules are components of the iReceptor Turnkey Repository platform (https://github.com/sfu-ireceptor).
 
 Assuming that you are running these shell scripts from within an iReceptor Turnkey system, the following commands will load both the repertoire and rearrangement data into the repository.
 
 ./test_imgt.sh: This will load the data set in the imgt_toy subdirectory into the repository.
+
 ./test_imgt_large.sh: Thus load the larger data set in the imgt subdirectory into the repository.
 
