@@ -25,7 +25,7 @@ repertoire.
 
 Both of these data sets are a subset of the data from the paper 
 "Immunoglobulin class-switched B cells provide an active immune axis between CNS and periphery in multiple sclerosis" by Palanichamy et. al.
-(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4176763/). The data sets were curated using the iReceptor Data Curation process listed here: http://www.ireceptor.org/curation.
+(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4176763/). The data sets were curated using the iReceptor Data Curation process listed here: http://www.ireceptor.org/curation. The full data set from this study is available through the iReceptor Scientific Gateway (http://gateway.ireceptor.org).
 
 Both examples have a simple shell script that uses the iReceptor Data Loading module to load the data into an iReceptor Mongo repository. These shell scripts assume that the data and the data loading modules are components of the iReceptor Turnkey Repository platform (https://github.com/sfu-ireceptor).
 
@@ -33,5 +33,6 @@ Assuming that you are running these shell scripts from within an iReceptor Turnk
 
 ./test_imgt_toy.sh: This will load the data set in the imgt_toy subdirectory into the repository.
 
-./test_imgt_large.sh: Thus load the larger data set in the imgt subdirectory into the repository.
+./test_imgt_large.sh: This will load the larger data set in the imgt subdirectory into the repository.
 
+It should be noted that it will not be possible to load both of these data sets at the same time. The iReceptor Data Loading module checks for duplicate data and will not allow a set of rearrangements to be loaded if it is ambigous as to which repertoire it should assign the rearrangements. Because the two example data sets share a rearrangement file, if you load both repertoire CSV files the rearrangement loader will not know which repertoire to assign the rearrangements. The loader will happily load the repertoire files, but it will fail when you try to load the rearrangments. If you load one of the examples, it will be necessary to delete the data from the repository for that example before you can load the other data set.
