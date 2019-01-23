@@ -25,7 +25,7 @@ repertoire.
 
 Both of these data sets are a subset of the data from the paper 
 "Immunoglobulin class-switched B cells provide an active immune axis between CNS and periphery in multiple sclerosis" by Palanichamy et. al.
-(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4176763/). The data sets were curated using the iReceptor Data Curation process listed here: http://www.ireceptor.org/curation.
+(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4176763/). The data sets were curated using the iReceptor Data Curation process listed here: http://www.ireceptor.org/curation. The full data set from this study is available through the iReceptor Scientific Gateway (http://gateway.ireceptor.org).
 
 Both examples have a simple shell script that uses the iReceptor Data Loading module to load the data into an iReceptor Mongo repository. These shell scripts assume that the data and the data loading modules are components of the iReceptor Turnkey Repository platform (https://github.com/sfu-ireceptor).
 
