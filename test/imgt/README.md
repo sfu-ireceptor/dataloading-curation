@@ -1,10 +1,10 @@
 # Overview 
-This folder contains test rearrangement data annotated by the HighV-QUEST
+This directory contains test rearrangement data annotated by the HighV-QUEST
 annotation resource provided by the ImMunoGeneTics (IMGT) information system.
 IMGT HighV-Quest can process files of up to 500,000 sequences and provides the
 resulting annotation files as a
 set of CSV files in a tarred and compressed file bundle (a .txz file).
-This folder consists of a set of example IMGT HighV-QUEST annotated files,
+This directory consists of a set of example IMGT HighV-QUEST annotated files,
 accompanying repertoire metadata files, and a simple shell script that loads
 the files into a local iReceptor repository.
 
@@ -14,9 +14,9 @@ document, for more details please visit the HighV-QUEST page
 
 # Examples
 
-There are two example rearrangement data sets in this folder, a data set that
+There are two example rearrangement data sets in this directory, a data set that
 consists of a single repertoire (subdirectory imgt_toy) and a data set that
-consists of eight repertoires (subdirectory imgt). Each folder consists of 
+consists of eight repertoires (subdirectory imgt). Each directory consists of 
 a repertoire metadata file (a UTF encoded CSV file) and a set of 
 rearrangement files.
 Each repertiore has been annotated with the HighV-QUEST annotation

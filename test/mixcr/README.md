@@ -1,5 +1,5 @@
 # Overview 
-This directory contains test rearrangement data annotated by the MiXCR annotation tool. This directory consists of a an example MiXCR annotation file, an accompanying repertoire metadata file, and a simple shell script that loads the files into a local iReceptor repository.
+This directory contains test rearrangement data annotated by the MiXCR annotation tool. This directory consists of an example MiXCR annotation file, an accompanying repertoire metadata file, and a simple shell script that loads the files into a local iReceptor repository.
 
 A detailed description of using MiXCR is beyond the scope of this document, for more details please visit the MiXCR documentation page (https://mixcr.readthedocs.io/en/latest/)
 
