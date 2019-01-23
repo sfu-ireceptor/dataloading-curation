@@ -35,3 +35,4 @@ Assuming that you are running these shell scripts from within an iReceptor Turnk
 
 ./test_imgt_large.sh: This will load the larger data set in the imgt subdirectory into the repository.
 
+It should be noted that it will not be possible to load both of these data sets at the same time. The iReceptor Data Loading module checks for duplicate data and will not allow a set of rearrangements to be loaded if it is ambigous as to which repertoire it should assign the rearrangements. Because the two example data sets share a rearrangement file, if you load both repertoire CSV files the rearrangement loader will not know which repertoire to assign the rearrangements. The loader will happily load the repertoire files, but it will fail when you try to load the rearrangments. If you load one of the examples, it will be necessary to delete the data from the repository for that example before you can load the other data set.
