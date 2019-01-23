@@ -33,5 +33,5 @@ Assuming that you are running these shell scripts from within an iReceptor Turnk
 
 ./test_imgt_toy.sh: This will load the data set in the imgt_toy subdirectory into the repository.
 
-./test_imgt_large.sh: Thus load the larger data set in the imgt subdirectory into the repository.
+./test_imgt_large.sh: This will load the larger data set in the imgt subdirectory into the repository.
 
