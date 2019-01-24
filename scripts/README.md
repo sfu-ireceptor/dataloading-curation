@@ -26,3 +26,17 @@ This command would first load the repertoire metadata file and the load all of t
 Note because the data loading process can take a very long time (many hours for large studies) it is a good idea to run this command in the background using the Unix "nohup" command. This will ensure that the command will run in the background and will not be interupted when the user logs out of the system being used to load the data. A typical usage in this scenario would be:
 
 nohup load_study.sh PRJNA248411_Palanichamy_2018-12-18.csv . imgt \*.txz > nohup.out &
+
+## Repertoire metadata loading
+
+In order to provide an easy way to split up the loading process, it is possible to load just a repertoire metadata file as well. Usage is almost identical with the exception that you don't provide the rearrangement files. Usage would be as follows:
+
+load_metadata.sh PRJNA248411_Palanichamy_2018-12-18.csv .
+
+## Rearrangement file loading
+
+It is also possible to load just a set of rearrangment files as well. Usage is almost identical with the exception that you don't provide the repertoire metadata file. Usage would be as follows:
+
+load_rearrangments.sh . imgt \*.txz
+
+Note that this assumes that the repertoire metadata for this study has already been loaded. If it is not possible to link a rearrangment file with a record in the repertoire metadata, then the data loader will refuse to load the rearrangement file. It is worth noting that the data loader will also refuse to load a rearrangement file if it can not find a unique repertoire to associate with the rearrangement file. Thus if you have loaded the repertoire metadata file multiple times or loaded both of the imgt/imgt_toy and imgt/imgt test data sets then the rearrangment files will not load. In the later case, this is because both the imgt/img_toy and imgt/imgt test data sets utilize the same repertoire rearrangement file. If you load both test data sets, you will have at least one duplicate repertoire record in the repository.
