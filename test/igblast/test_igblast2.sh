@@ -2,7 +2,7 @@
 echo $PWD
 if [ -z "$PYTHONPATH" ];
 then
-    export PYTHONPATH=../../../dataloading-mongo/scripts
+    export PYTHONPATH=../../../dataloading-mongo/dataload
 fi
 if [ -z "$CONFIGPATH" ];
 then
@@ -14,5 +14,5 @@ then
 fi
 
 
-python $PYTHONPATH/dataloader.py --host=$DB_HOST --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -s -l $PWD -f toy_data_sample.csv
-python $PYTHONPATH/dataloader.py --host=$DB_HOST --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -v -a -l $PWD -f toy_data.tsv
+python $PYTHONPATH/dataloader.py --host=$DB_HOST --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -s -f toy_data_sample.csv
+python $PYTHONPATH/dataloader.py --host=$DB_HOST --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt -v -a -f toy_data.tsv
