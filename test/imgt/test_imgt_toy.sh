@@ -2,7 +2,7 @@
 echo $PWD
 if [ -z "$PYTHONPATH" ];
 then
-    export PYTHONPATH=../../../dataloading-mongo/scripts
+    export PYTHONPATH=../../../dataloading-mongo/dataload
 fi
 if [ -z "$CONFIGPATH" ];
 then
