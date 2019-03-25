@@ -11,7 +11,7 @@ then
 fi
 if [ -z "$CONFIGPATH" ];
 then
-    export CONFIGPATH=../../../dataloading-mongo/config
+    export CONFIGPATH=../../../config
 fi
 if [ -z "$DB_HOST" ];
 then
