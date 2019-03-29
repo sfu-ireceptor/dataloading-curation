@@ -4,7 +4,7 @@ This GIT repository contains example files and documentation for loading data in
 
 # The iReceptor Data Curation process
 
-The iReceptor team follows a relatively strict data curation process. This process is documented on the [iReceptor Curation page]<http://www.ireceptor.org/curation>. We do not discuss this process in detail here, but instead suggest simple processes that can make data curation easier to manage.
+The iReceptor team follows a relatively strict data curation process. This process is documented on the [iReceptor Curation page](http://www.ireceptor.org/curation). We do not discuss this process in detail here, but instead suggest simple processes that can make data curation easier to manage.
 
 The iReceptor curation process is focused around the curation of data for a single. As such, we recommend that all data that is being curated for a specific study be stored in a single directory. As an example, we will use one of the [IMGT example data sets](test/imgt/imgt).
 
