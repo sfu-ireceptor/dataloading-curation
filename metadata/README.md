@@ -1,0 +1,11 @@
+# iReceptor Repertoire Metadata files
+
+The iReceptor Project maintains a Repertoire Metadata standard file format that it uses in its internal data curation process. Repertoire metadata files are UTF-8 encoded comma delimited text files (CSV files), consisting of a single header line followed by a single line for each repertoire. The header line should consist of the names of the keys that will be stored in the Mongo repository. If the intent is to create an AIRR compatible repository, then the header lines should consist of keys that map to AIRR fields as specified in the MiAIRR standard as defined in the "AIRR Formats WG field name" as described here: https://github.com/airr-community/airr-standards/blob/master/AIRR_Minimal_Standard_Data_Elements.tsv
+
+Repertoire metadata files are loaded into a repository using the iReceptor Data Loading  scripts (https://github.com/sfu-ireceptor/dataloading-mongo). The data loading scripts will store all columns contained in the repertoire metadata CSV file, and will provide warnings to the user if the file is missing MiAIRR compatible field names. Please refer to the documentaion on the data loading python scripts on how to use these scripts to load repertoire data into a repository. Examples of using the scripts are provided in the shell scripts in each of the example folders for each of the annotation tools in this git repository.
+
+## Example iReceptor Repertoire Metadata Files
+
+In order to ease the use of iReceptor Repertoire Metadata files, this directory contains an annotated, example Repertoire Metadata file. It consists of a set of rows that describe realistic repertoire samples from actual studies curated in the iReceptor Public Archiver repositories. The first row is a header row, and it is this row that defines the fields in the rest of the spreadsheet. If you are using this spreadsheet to load data into a repository using the iReceptor Data Loading software, these are the names of the fields that will be loaded into the repository. In general, we recommend that you use the AIRR Minimal Standard terms for these columns (these are the default columns provided).
+
+More documentation on the columns and their uses is provided in the Excel spreadsheet itself. A UTF-encoded comma separated file that could be used directly with the iReceptor Data Loader is also provided.
