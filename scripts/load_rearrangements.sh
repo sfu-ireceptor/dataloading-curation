@@ -25,12 +25,17 @@ fi
 
 if [ -z "$PYTHONPATH" ];
 then
-    export PYTHONPATH=../../../scripts
+    export PYTHONPATH=../../../dataloading-mongo/dataload
 fi
 if [ -z "$CONFIGPATH" ];
 then
     export CONFIGPATH=../../../config
 fi
+if [ -z "$DB_HOST" ];
+then
+    export DB_HOST=localhost
+fi
+
 
 # Keep track of the output directory for the log files.
 outdir=$1
@@ -57,7 +62,7 @@ while [ "$1" != "" ]; do
     out_file=$outdir/$annotation_file.$current_time.out
     # Load the rearrangement file, exit if failed.
     echo "Loading annotation file $filename (log file = $out_file)"
-    python $PYTHONPATH/dataloader.py -v --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --$rearrangement_type -f $filename > $out_file
+    python $PYTHONPATH/dataloader.py  --host=$DB_HOST -v --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --$rearrangement_type -f $filename > $out_file
 
     if [ $? -ne 0 ];
     then
