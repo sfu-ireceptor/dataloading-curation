@@ -44,6 +44,9 @@
         },
         "sex": "F",
         "age": "27yr",
+        "age_min": 27,
+        "age_max": 27,
+        "age_unit": {"value":"year", "id":"UO_0000036"},
         "age_event": "",
         "ancestry_population": "",
         "ethnicity": "",
@@ -101,7 +104,7 @@
               "reverse_pcr_primer_target_location": ""
             }
           ],
-          "complete_sequences": false,
+          "complete_sequences": "complete",
           "physical_linkage": "none",
           "sequencing_run_id": "",
           "total_reads_passing_qc_filter": null,
