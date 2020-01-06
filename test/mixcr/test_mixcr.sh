@@ -19,4 +19,7 @@ then
 fi
 
 python $PYTHONPATH/dataloader.py -v --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -s -f PRJNA330606_Wang_One_Sample.csv
-python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -v -m -f SRR4084215_aa_mixcr_annotation_1000_lines.txt.gz
+if [ $? -eq 0 ]
+then
+    python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -v -m -f SRR4084215_aa_mixcr_annotation_1000_lines.txt.gz
+fi
