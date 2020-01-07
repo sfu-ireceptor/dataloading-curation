@@ -18,5 +18,6 @@ then
     export DB_HOST=localhost
 fi
 
+#python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -v --ireceptor -f master_metadata_2020-01-03.csv
 python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -v --ireceptor -f master_metadata_10.csv
 
