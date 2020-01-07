@@ -14,5 +14,5 @@ then
 fi
 
 
-python $PYTHONPATH/dataloader.py -v -s --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f analy13_sample.csv
-python $PYTHONPATH/dataloader.py -v -a --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f analy13.igblast_airr_annots.txt
+python $PYTHONPATH/dataloader.py -v --ireceptor --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f analy13_sample.csv
+python $PYTHONPATH/dataloader.py -v --airr --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f analy13.igblast_airr_annots.txt
