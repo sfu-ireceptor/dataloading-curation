@@ -18,5 +18,5 @@ then
     export DB_HOST=localhost
 fi
 
-python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -v -r -f florian.airr.json
+python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -v --repertoire -f florian.airr.json
 
