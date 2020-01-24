@@ -70,7 +70,6 @@
       "sample": [
         {
           "sample_id": "TW01A_B_naive",
-          "ir_rearrangement_file_name":"TW01A_B_naive.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -124,18 +123,6 @@
       ],
       "data_processing": [
         {
-          "data_processing_id": "3059369183532618216-242ac11b-0001-007",
-          "primary_annotation": false,
-          "analysis_provenance_id": "6623294219256599016-242ac11c-0001-012",
-          "software_versions": "",
-          "paired_reads_assembly": "",
-          "quality_thresholds": "",
-          "primer_match_cutoffs": "",
-          "collapsing_method": "",
-          "data_processing_protocols": "",
-          "germline_database": ""
-        },
-        {
           "data_processing_id": "6414d653-edd2-4d26-be1d-98a82f5e9c98-007",
           "primary_annotation": true,
           "software_versions": "",
@@ -144,6 +131,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files":["TW01A_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
