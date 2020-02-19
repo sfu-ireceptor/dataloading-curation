@@ -140,7 +140,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01A_B_naive.igblast.airr.tsv",
+          "data_processing_files": ["TW01A_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -272,7 +272,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01A_B_memory.igblast.airr.tsv",
+          "data_processing_files": ["TW01A_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -392,7 +392,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01A_T_naive_CD4.igblast.airr.tsv",
+          "data_processing_files": ["TW01A_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -512,7 +512,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01A_T_naive_CD8.igblast.airr.tsv",
+          "data_processing_files": ["TW01A_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -632,7 +632,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01A_T_memory_CD4.igblast.airr.tsv",
+          "data_processing_files": ["TW01A_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -752,7 +752,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01A_T_memory_CD8.igblast.airr.tsv",
+          "data_processing_files": ["TW01A_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -884,7 +884,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01B_B_naive.igblast.airr.tsv",
+          "data_processing_files": ["TW01B_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -1016,7 +1016,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01B_B_memory.igblast.airr.tsv",
+          "data_processing_files": ["TW01B_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -1136,7 +1136,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01B_T_naive_CD4.igblast.airr.tsv",
+          "data_processing_files": ["TW01B_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -1256,7 +1256,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01B_T_naive_CD8.igblast.airr.tsv",
+          "data_processing_files": ["TW01B_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -1376,7 +1376,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01B_T_memory_CD4.igblast.airr.tsv",
+          "data_processing_files": ["TW01B_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -1496,7 +1496,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW01B_T_memory_CD8.igblast.airr.tsv",
+          "data_processing_files": ["TW01B_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -1628,7 +1628,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW02A_B_naive.igblast.airr.tsv",
+          "data_processing_files": ["TW02A_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -1760,7 +1760,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW02A_B_memory.igblast.airr.tsv",
+          "data_processing_files": ["TW02A_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -1880,7 +1880,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW02A_T_naive_CD4.igblast.airr.tsv",
+          "data_processing_files": ["TW02A_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2000,7 +2000,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW02A_T_naive_CD8.igblast.airr.tsv",
+          "data_processing_files": ["TW02A_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2120,7 +2120,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW02A_T_memory_CD4.igblast.airr.tsv",
+          "data_processing_files": ["TW02A_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2240,7 +2240,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW02A_T_memory_CD8.igblast.airr.tsv",
+          "data_processing_files": ["TW02A_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2372,7 +2372,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "ir_rearrangement_file_name": "TW02B_B_naive.igblast.airr.tsv",
+          "data_processing_files": ["TW02B_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2431,7 +2431,6 @@
       "sample": [
         {
           "sample_id": "TW02B_B_memory",
-          "ir_rearrangement_file_name": "TW02B_B_memory.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -2505,6 +2504,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW02B_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2563,7 +2563,6 @@
       "sample": [
         {
           "sample_id": "TW02B_T_naive_CD4",
-          "ir_rearrangement_file_name": "TW02B_T_naive_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -2625,6 +2624,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW02B_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2683,7 +2683,6 @@
       "sample": [
         {
           "sample_id": "TW02B_T_naive_CD8",
-          "ir_rearrangement_file_name": "TW02B_T_naive_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -2745,6 +2744,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW02B_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2803,7 +2803,6 @@
       "sample": [
         {
           "sample_id": "TW02B_T_memory_CD4",
-          "ir_rearrangement_file_name": "TW02B_T_memory_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -2865,6 +2864,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW02B_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -2923,7 +2923,6 @@
       "sample": [
         {
           "sample_id": "TW02B_T_memory_CD8",
-          "ir_rearrangement_file_name": "TW02B_T_memory_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -2985,6 +2984,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW02B_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -3043,7 +3043,6 @@
       "sample": [
         {
           "sample_id": "TW03A_B_naive",
-          "ir_rearrangement_file_name": "TW03A_B_naive.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -3117,6 +3116,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03A_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -3175,7 +3175,6 @@
       "sample": [
         {
           "sample_id": "TW03A_B_memory",
-          "ir_rearrangement_file_name": "TW03A_B_memory.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -3249,6 +3248,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03A_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -3307,7 +3307,6 @@
       "sample": [
         {
           "sample_id": "TW03A_T_naive_CD4",
-          "ir_rearrangement_file_name": "TW03A_T_naive_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -3369,6 +3368,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03A_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -3427,7 +3427,6 @@
       "sample": [
         {
           "sample_id": "TW03A_T_naive_CD8",
-          "ir_rearrangement_file_name": "TW03A_T_naive_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -3489,6 +3488,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03A_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -3547,7 +3547,6 @@
       "sample": [
         {
           "sample_id": "TW03A_T_memory_CD4",
-          "ir_rearrangement_file_name": "TW03A_T_memory_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -3609,6 +3608,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03A_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -3667,7 +3667,6 @@
       "sample": [
         {
           "sample_id": "TW03A_T_memory_CD8",
-          "ir_rearrangement_file_name": "TW03A_T_memory_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -3729,6 +3728,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03A_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -3787,7 +3787,6 @@
       "sample": [
         {
           "sample_id": "TW03B_B_naive",
-          "ir_rearrangement_file_name": "TW03B_B_naive.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -3861,6 +3860,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03B_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -3919,7 +3919,6 @@
       "sample": [
         {
           "sample_id": "TW03B_B_memory",
-          "ir_rearrangement_file_name": "TW03B_B_memory.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -3993,6 +3992,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03B_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -4051,7 +4051,6 @@
       "sample": [
         {
           "sample_id": "TW03B_T_naive_CD4",
-          "ir_rearrangement_file_name": "TW03B_T_naive_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -4113,6 +4112,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03B_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -4171,7 +4171,6 @@
       "sample": [
         {
           "sample_id": "TW03B_T_naive_CD8",
-          "ir_rearrangement_file_name": "TW03B_T_naive_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -4233,6 +4232,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03B_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -4291,7 +4291,6 @@
       "sample": [
         {
           "sample_id": "TW03B_T_memory_CD4",
-          "ir_rearrangement_file_name": "TW03B_T_memory_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -4353,6 +4352,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03B_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -4411,7 +4411,6 @@
       "sample": [
         {
           "sample_id": "TW03B_T_memory_CD8",
-          "ir_rearrangement_file_name": "TW03B_T_memory_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -4473,6 +4472,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW03B_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -4531,7 +4531,6 @@
       "sample": [
         {
           "sample_id": "TW04A_B_naive",
-          "ir_rearrangement_file_name": "TW04A_B_naive.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -4605,6 +4604,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04A_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -4663,7 +4663,6 @@
       "sample": [
         {
           "sample_id": "TW04A_B_memory",
-          "ir_rearrangement_file_name": "TW04A_B_memory.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -4737,6 +4736,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04A_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -4795,7 +4795,6 @@
       "sample": [
         {
           "sample_id": "TW04A_T_naive_CD4",
-          "ir_rearrangement_file_name": "TW04A_T_naive_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -4857,6 +4856,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04A_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -4915,7 +4915,6 @@
       "sample": [
         {
           "sample_id": "TW04A_T_naive_CD8",
-          "ir_rearrangement_file_name": "TW04A_T_naive_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -4977,6 +4976,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04A_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -5035,7 +5035,6 @@
       "sample": [
         {
           "sample_id": "TW04A_T_memory_CD4",
-          "ir_rearrangement_file_name": "TW04A_T_memory_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -5097,6 +5096,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04A_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -5155,7 +5155,6 @@
       "sample": [
         {
           "sample_id": "TW04A_T_memory_CD8",
-          "ir_rearrangement_file_name": "TW04A_T_memory_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -5217,6 +5216,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04A_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -5275,7 +5275,6 @@
       "sample": [
         {
           "sample_id": "TW04B_B_naive",
-          "ir_rearrangement_file_name": "TW04B_B_naive.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -5349,6 +5348,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04B_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -5407,7 +5407,6 @@
       "sample": [
         {
           "sample_id": "TW04B_B_memory",
-          "ir_rearrangement_file_name": "TW04B_B_memory.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -5481,6 +5480,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04B_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -5539,7 +5539,6 @@
       "sample": [
         {
           "sample_id": "TW04B_T_naive_CD4",
-          "ir_rearrangement_file_name": "TW04B_T_naive_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -5601,6 +5600,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04B_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -5659,7 +5659,6 @@
       "sample": [
         {
           "sample_id": "TW04B_T_naive_CD8",
-          "ir_rearrangement_file_name": "TW04B_T_naive_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -5721,6 +5720,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04B_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -5779,7 +5779,6 @@
       "sample": [
         {
           "sample_id": "TW04B_T_memory_CD4",
-          "ir_rearrangement_file_name": "TW04B_T_memory_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -5841,6 +5840,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04B_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -5899,7 +5899,6 @@
       "sample": [
         {
           "sample_id": "TW04B_T_memory_CD8",
-          "ir_rearrangement_file_name": "TW04B_T_memory_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -5961,6 +5960,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW04B_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -6019,7 +6019,6 @@
       "sample": [
         {
           "sample_id": "TW05A_B_naive",
-          "ir_rearrangement_file_name": "TW05A_B_naive.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -6093,6 +6092,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05A_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -6151,7 +6151,6 @@
       "sample": [
         {
           "sample_id": "TW05A_B_memory",
-          "ir_rearrangement_file_name": "TW05A_B_memory.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -6225,6 +6224,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05A_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -6283,7 +6283,6 @@
       "sample": [
         {
           "sample_id": "TW05A_T_naive_CD4",
-          "ir_rearrangement_file_name": "TW05A_T_naive_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -6345,6 +6344,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05A_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -6403,7 +6403,6 @@
       "sample": [
         {
           "sample_id": "TW05A_T_naive_CD8",
-          "ir_rearrangement_file_name": "TW05A_T_naive_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -6465,6 +6464,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05A_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -6523,7 +6523,6 @@
       "sample": [
         {
           "sample_id": "TW05A_T_memory_CD4",
-          "ir_rearrangement_file_name": "TW05A_T_memory_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -6585,6 +6584,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05A_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -6643,7 +6643,6 @@
       "sample": [
         {
           "sample_id": "TW05A_T_memory_CD8",
-          "ir_rearrangement_file_name": "TW05A_T_memory_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -6705,6 +6704,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05A_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -6763,7 +6763,6 @@
       "sample": [
         {
           "sample_id": "TW05B_B_naive",
-          "ir_rearrangement_file_name": "TW05B_B_naive.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -6837,6 +6836,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05B_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -6895,7 +6895,6 @@
       "sample": [
         {
           "sample_id": "TW05B_B_memory",
-          "ir_rearrangement_file_name": "TW05B_B_memory.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -6969,6 +6968,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05B_B_memory.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -7027,7 +7027,6 @@
       "sample": [
         {
           "sample_id": "TW05B_T_naive_CD4",
-          "ir_rearrangement_file_name": "TW05B_T_naive_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -7089,6 +7088,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05B_T_naive_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -7147,7 +7147,6 @@
       "sample": [
         {
           "sample_id": "TW05B_T_naive_CD8",
-          "ir_rearrangement_file_name": "TW05B_T_naive_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -7209,6 +7208,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05B_T_naive_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -7267,7 +7267,6 @@
       "sample": [
         {
           "sample_id": "TW05B_T_memory_CD4",
-          "ir_rearrangement_file_name": "TW05B_T_memory_CD4.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -7329,6 +7328,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05B_T_memory_CD4.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
@@ -7387,7 +7387,6 @@
       "sample": [
         {
           "sample_id": "TW05B_T_memory_CD8",
-          "ir_rearrangement_file_name": "TW05B_T_memory_CD8.igblast.airr.tsv",
           "sample_type": "",
           "tissue": "PBMC",
           "anatomic_site": "",
@@ -7449,6 +7448,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
+          "data_processing_files": ["TW05B_T_memory_CD8.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
