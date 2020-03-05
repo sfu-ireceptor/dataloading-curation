@@ -21,6 +21,6 @@ fi
 python $PYTHONPATH/dataloader.py -v --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST --repertoire -f florian.airr.1.json
 if [ $? -eq 0 ]
 then
-    python $PYTHONPATH/dataloader.py -v --database_chunk=1000 --airr --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f TW01A_B_naive.igblast.airr.tsv
+    python $PYTHONPATH/dataloader.py -v --database_chunk=1000 --airr --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f TW01A_B_naive.igblast.airr.tsv.gz
 fi
 
