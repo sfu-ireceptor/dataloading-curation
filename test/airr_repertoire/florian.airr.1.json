@@ -42,7 +42,7 @@
           "id": "9606",
           "value": "Homo sapiens"
         },
-        "sex": "F",
+        "sex": "female",
         "age": "27yr",
         "age_min": 27,
         "age_max": 27,
@@ -57,7 +57,7 @@
         "diagnosis": [
           {
             "study_group_description": "",
-            "disease_diagnosis": "",
+            "disease_diagnosis": {"value":null, "id":null},
             "disease_length": "",
             "disease_stage": "",
             "prior_therapies": "",
