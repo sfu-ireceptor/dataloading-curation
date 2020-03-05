@@ -13,5 +13,8 @@ then
     export DB_HOST=localhost
 fi
 
-python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -s -f imgt_toy/PRJNA248411_Palanichamy_SRR1298740.csv
-python $PYTHONPATH/dataloader.py --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -v -i -f imgt_toy/SRR1298740.txz
+python $PYTHONPATH/dataloader.py --database_map=ir_repository --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST --ireceptor -f imgt_toy/PRJNA248411_Palanichamy_SRR1298740.csv
+if [ $? -eq 0 ]
+then
+    python $PYTHONPATH/dataloader.py --database_map=ir_repository --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -v --imgt -f imgt_toy/SRR1298740.txz
+fi
