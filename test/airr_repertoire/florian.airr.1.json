@@ -132,7 +132,7 @@
           "primer_match_cutoffs": "",
           "collapsing_method": "",
           "data_processing_protocols": "",
-          "data_processing_files":["TW04B_B_memory.igblast.airr.small.tsv"],
+          "data_processing_files":["TW01A_B_naive.igblast.airr.tsv"],
           "germline_database": ""
         }
       ]
