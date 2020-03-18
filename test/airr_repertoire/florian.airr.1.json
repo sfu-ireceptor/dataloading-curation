@@ -71,7 +71,7 @@
         {
           "sample_id": "TW01A_B_naive",
           "sample_type": "",
-          "tissue": "PBMC",
+          "tissue": {"value":"PBMC", "id":null},
           "anatomic_site": "",
           "disease_state_sample": "",
           "collection_time_point_relative": "",
