@@ -18,8 +18,8 @@
   "study_title":"IGH Normal Healthy Controls - Memory and Naive Sorts",
   "study_id":"5e4c1ee3-cd45-49a4-86dd-ed1d9ea31eb4",
   "study_type": {
-    "id": "",
-    "value": ""
+    "id": null,
+    "value": null 
   },
   "study_description": "",
   "inclusion_exclusion_criteria": "",
@@ -29,17 +29,17 @@
   "collected_by": "",
   "grants": "",
   "pub_ids": "",
-  "keywords_study": [""]
+  "keywords_study": null
  },
  "subject":{
   "subject_id":"238",
-  "species":{"id":"","value":"Human"},
-  "sex":"NA",
+  "species":{"id":"NCBITaxon_9606","value":"Homo Sapiens"},
+  "sex":null,
    "synthetic": false,
    "age": "",
    "age_min": null,
    "age_max": null,
-   "age_unit": {"value":"", "id":""},
+   "age_unit": {"value":null, "id":null},
    "age_event": "",
    "ancestry_population": "",
    "ethnicity": "",
@@ -66,8 +66,8 @@
    "sample_id": "",
    "sample_type": "",
    "tissue" :{
-     "id": "",
-    "value":"NA"
+     "id": null,
+    "value":null
    },
  "anatomic_site": "",
    "disease_state_sample": "",
@@ -76,8 +76,8 @@
    "biomaterial_provider": "",
    "tissue_processing": "",
    "cell_subset": {
-     "id": "",
-    "value":"NA"
+     "id": null,
+    "value":null
    },
    "cell_phenotype": "",
    "single_cell": false,

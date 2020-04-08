@@ -69,9 +69,10 @@
       },
       "sample": [
         {
+          "sample_processing_id": "6414d653-edd2-4d26-be1d-98a82f5e9c98-007",
           "sample_id": "TW01A_B_naive",
           "sample_type": "",
-          "tissue": {"value":"PBMC", "id":null},
+          "tissue": {"value":null, "id":null},
           "anatomic_site": "",
           "disease_state_sample": "",
           "collection_time_point_relative": "",
