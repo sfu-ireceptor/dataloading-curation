@@ -8,10 +8,10 @@ For more information on metadata curation, please refer to:
 * [The AIRR repertoire metadata example](test/airr_repertoire)
 
 For more details on rearrangement curation, please refer to:
+* [The test data set documentation](test)
 * [The AIRR rearrangement format (including igblast) example](test/igblast)
 * [The MiXCR rearrangement format example](test/mixcr)
 * [The IMGT V-QUEST rearrangement example](test/imgt)
-
 
 # The iReceptor Data Curation process
 
