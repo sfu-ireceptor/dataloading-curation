@@ -20,7 +20,7 @@
         "study_title": "Homo sapiens B and T cell repertoire - MZ twins",
         "study_type": {
           "id": "C147138",
-          "value": "Observational Study Model"
+          "label": "Observational Study Model"
         },
         "study_description": "The adaptive immune system's capability to protect the body requires a highly diverse lymphocyte antigen receptor repertoire. However, the influence of individual genetic and epigenetic differences on these repertoires is not typically measured. By leveraging the unique characteristics of B, CD4+ T, and CD8+ T lymphocyte subsets isolated from monozygotic twins, we have quantified the impact of heritable factors on both the V(D)J recombination process and thymic selection in the case of T cell receptors, and show that the repertoires of both naive and antigen experienced cells are subject to biases resulting from differences in recombination. We show that biases in V(D)J usage, as well as biased N/P additions, contribute to significant variation in the CDR3 region. Moreover, we show that the relative usage of V and J gene segments is chromosomally biased, with approximately 1.5 times as many rearrangements originating from a single chromosome. These data refine our understanding of the heritable mechanisms affecting the repertoire, and show that biases are evident on a chromosome-wide level.",
         "inclusion_exclusion_criteria": "",
@@ -40,13 +40,13 @@
         "synthetic": false,
         "species": {
           "id": "9606",
-          "value": "Homo sapiens"
+          "label": "Homo sapiens"
         },
         "sex": "female",
         "age": "27yr",
         "age_min": 27,
         "age_max": 27,
-        "age_unit": {"value":"year", "id":"UO_0000036"},
+        "age_unit": {"label":"year", "id":"UO_0000036"},
         "age_event": "",
         "ancestry_population": "",
         "ethnicity": "",
@@ -57,7 +57,7 @@
         "diagnosis": [
           {
             "study_group_description": "",
-            "disease_diagnosis": {"value":null, "id":null},
+            "disease_diagnosis": {"label":null, "id":null},
             "disease_length": "",
             "disease_stage": "",
             "prior_therapies": "",
@@ -72,7 +72,7 @@
           "sample_processing_id": "6414d653-edd2-4d26-be1d-98a82f5e9c98-007",
           "sample_id": "TW01A_B_naive",
           "sample_type": "",
-          "tissue": {"value":null, "id":null},
+          "tissue": {"label":null, "id":null},
           "anatomic_site": "",
           "disease_state_sample": "",
           "collection_time_point_relative": "",
@@ -81,7 +81,7 @@
           "tissue_processing": "",
           "cell_subset": {
             "id": "CL_0000788",
-            "value": "naive B cell"
+            "label": "naive B cell"
           },
           "cell_phenotype": "expression of CD20 and the absence of CD27",
           "single_cell": false,
