@@ -19,7 +19,7 @@
         "study_id": "PRJNA300878",
         "study_title": "Homo sapiens B and T cell repertoire - MZ twins",
         "study_type": {
-          "id": "C147138",
+          "id": "NCIT:C147138",
           "label": "Observational Study Model"
         },
         "study_description": "The adaptive immune system's capability to protect the body requires a highly diverse lymphocyte antigen receptor repertoire. However, the influence of individual genetic and epigenetic differences on these repertoires is not typically measured. By leveraging the unique characteristics of B, CD4+ T, and CD8+ T lymphocyte subsets isolated from monozygotic twins, we have quantified the impact of heritable factors on both the V(D)J recombination process and thymic selection in the case of T cell receptors, and show that the repertoires of both naive and antigen experienced cells are subject to biases resulting from differences in recombination. We show that biases in V(D)J usage, as well as biased N/P additions, contribute to significant variation in the CDR3 region. Moreover, we show that the relative usage of V and J gene segments is chromosomally biased, with approximately 1.5 times as many rearrangements originating from a single chromosome. These data refine our understanding of the heritable mechanisms affecting the repertoire, and show that biases are evident on a chromosome-wide level.",
@@ -39,14 +39,14 @@
         "subject_id": "TW01A",
         "synthetic": false,
         "species": {
-          "id": "9606",
+          "id": "NCBITAXON:9606",
           "label": "Homo sapiens"
         },
         "sex": "female",
         "age": "27yr",
         "age_min": 27,
         "age_max": 27,
-        "age_unit": {"label":"year", "id":"UO_0000036"},
+        "age_unit": {"label":"year", "id":"UO:0000036"},
         "age_event": "",
         "ancestry_population": "",
         "ethnicity": "",
@@ -80,7 +80,7 @@
           "biomaterial_provider": "",
           "tissue_processing": "",
           "cell_subset": {
-            "id": "CL_0000788",
+            "id": "CL:0000788",
             "label": "naive B cell"
           },
           "cell_phenotype": "expression of CD20 and the absence of CD27",
