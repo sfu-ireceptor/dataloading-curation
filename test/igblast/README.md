@@ -3,6 +3,3 @@ This directory contains test rearrangement data annotated by the igblast annotat
 
 A detailed description of using igblast is beyond the scope of this document, for more details please visit the igblast documentation page (https://ncbi.github.io/igblast/)
 
-# Example Data
-
-To be described...
