@@ -27,9 +27,11 @@ Both of these data sets are a subset of the data from the paper
 "Immunoglobulin class-switched B cells provide an active immune axis between CNS and periphery in multiple sclerosis" by Palanichamy et. al.
 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4176763/). The data sets were curated using the iReceptor Data Curation process listed here: http://www.ireceptor.org/curation. The full data set from this study is available through the iReceptor Scientific Gateway (http://gateway.ireceptor.org).
 
-Both examples have a simple shell script that uses the iReceptor Data Loading module to load the data into an iReceptor Mongo repository. These shell scripts assume that the data and the data loading modules are components of the iReceptor Turnkey Repository platform (https://github.com/sfu-ireceptor).
+If you are using an iReceptor Turnkey Repository (https://github.com/sfu-ireceptor/turnkey-service-php) please refer to the loading data section of the iReceptor Turnkey documentation. This documentation does not apply to you.
 
-Assuming that you are running these shell scripts from within an iReceptor Turnkey system, the following commands will load both the repertoire and rearrangement data into the repository.
+If you choose to use these github repositories directly, there is a simple shell script that uses the iReceptor Data Loading module to load the data into an iReceptor Mongo repository. This shell script assumes that the github dataloading_curation (https://github.com/sfu-ireceptor/dataloading-curation), the dataloading_mongo (https://github.com/sfu-ireceptor/dataloading-mongo), and the config (https://github.com/sfu-ireceptor/config) modules are checked out in the same directory and that a local Mongo repository is running.
+
+Assuming that you are running these shell scripts as described above, the following commands will load both the repertoire and rearrangement data into the repository.
 
 ./test_imgt_toy.sh: This will load the data set in the imgt_toy subdirectory into the repository.
 
