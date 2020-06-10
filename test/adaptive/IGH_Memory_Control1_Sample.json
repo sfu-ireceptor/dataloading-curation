@@ -19,7 +19,7 @@
   "study_id":"5e4c1ee3-cd45-49a4-86dd-ed1d9ea31eb4",
   "study_type": {
     "id": null,
-    "value": null 
+    "label": null 
   },
   "study_description": "",
   "inclusion_exclusion_criteria": "",
@@ -33,13 +33,13 @@
  },
  "subject":{
   "subject_id":"238",
-  "species":{"id":"NCBITaxon_9606","value":"Homo Sapiens"},
+  "species":{"id":"NCBITAXON:9606","label":"Homo Sapiens"},
   "sex":null,
    "synthetic": false,
    "age": "",
    "age_min": null,
    "age_max": null,
-   "age_unit": {"value":null, "id":null},
+   "age_unit": {"label":null, "id":null},
    "age_event": "",
    "ancestry_population": "",
    "ethnicity": "",
@@ -50,7 +50,7 @@
    "diagnosis": [
    {
      "study_group_description": "",
-     "disease_diagnosis": {"value":null, "id":null},
+     "disease_diagnosis": {"label":null, "id":null},
      "disease_length": "",
      "disease_stage": "",
      "prior_therapies": "",
@@ -67,7 +67,7 @@
    "sample_type": "",
    "tissue" :{
      "id": null,
-    "value":null
+    "label":null
    },
  "anatomic_site": "",
    "disease_state_sample": "",
@@ -77,7 +77,7 @@
    "tissue_processing": "",
    "cell_subset": {
      "id": null,
-    "value":null
+    "label":null
    },
    "cell_phenotype": "",
    "single_cell": false,
