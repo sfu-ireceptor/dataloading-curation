@@ -18,9 +18,11 @@ then
     export DB_HOST=localhost
 fi
 
-python $PYTHONPATH/dataloader.py -v --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST --repertoire -f IGH_Memory_Control1_Sample.json
+python $PYTHONPATH/dataloader.py -v --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST --ireceptor -f 860011108_TCRB_test_upload.csv
+#python $PYTHONPATH/dataloader.py -v --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST --repertoire -f IGH_Memory_Control1_Sample.json
 if [ $? -eq 0 ]
 then
-    python $PYTHONPATH/dataloader.py -v --database_chunk=1000 --adaptive --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f IGH_Memory_Control1_RearrangementDetails.tsv
+    python $PYTHONPATH/dataloader.py -v --database_chunk=1000 --adaptive --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f 860011108_TCRB-500.tsv
+    #python $PYTHONPATH/dataloader.py -v --database_chunk=1000 --adaptive --mapfile=$CONFIGPATH/AIRR-iReceptorMapping.txt --host=$DB_HOST -f IGH_Memory_Control1_RearrangementDetails.tsv
 fi
 
