@@ -1,0 +1,123 @@
+Test Sequence Metadata
+Lab: Department of Immunology
+Perform tests on ./CSV_FILES/DI_Seq.csv
+
+
+Begin Test 1: 
+Verify length of Junction Sequence(AA) is correct------------------------------------------------>PASSED
+End Test 1
+
+
+Begin Test 2: 
+Verify All entries contain either IG or TR names
+Verifying V-Gene Column ------------------------------------------------>FAILED
+ Please verify entries [[['Musmus', 'IGHV5-12-1*01'], 'Musmus'], [['Musmus', 'IGHV5-6-5*01'], 'Musmus'], [['Musmus', 'IGHV2-5*01'], 'Musmus'], [['Musmus', 'IGHV3-2*02'], 'Musmus'], [['Musmus', 'IGHV1S81*02'], 'Musmus'], [['Musmus', 'IGHV9-2-1*01'], 'Musmus'], [['Musmus', 'IGHV5-4*02'], 'Musmus'], [['Musmus', 'IGHV7-3*02'], 'Musmus'], [['Musmus', 'IGHV1S74*01', '[P]'], 'Musmus'], [['Musmus', 'IGHV1S74*01', '[P]'], '[P]'], [['Musmus', 'IGHV5-12-1*01'], 'Musmus'], [['Musmus', 'IGHV1S100*01'], 'Musmus'], [['Musmus', 'IGHV1S29*02'], 'Musmus'], [['Musmus', 'IGHV1-5*01'], 'Musmus'], [['Musmus', 'IGHV5-9*03', 'IGHV5-9-5*01'], 'Musmus'], [['Musmus', 'IGHV9-3-1*01'], 'Musmus'], [['Musmus', 'IGHV5-17*02'], 'Musmus'], [['IGHV1-74*04', 'Musmus', 'IGHV1-74*01', 'IGHV1-52*01', 'IGHV1-61*01'], 'Musmus'], [['Musmus', 'IGHV2-9*02'], 'Musmus'], [['Musmus', 'IGHV9-3-1*01'], 'Musmus'], [['Musmus', 'IGHV5-9*03', 'IGHV5-9-5*01'], 'Musmus'], [['Musmus', 'IGHV5-9*03', 'IGHV5-9-5*01'], 'Musmus'], [['Musmus', 'IGHV9-3-1*01', 'IGHV9-1*03', 'IGHV9-1*02'], 'Musmus'], [['Musmus', 'IGHV9-3-1*01'], 'Musmus'], [['Musmus', 'IGHV2-3*01'], 'Musmus'], [['Musmus', 'IGHV9-3-1*01'], 'Musmus']]
+Verifying J-Gene Column ------------------------------------------------>FAILED
+ Please verify entries [[['Musmus', 'IGHJ3*01'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ3*01', 'IGHJ3*02'], 'Musmus'], [['Musmus', 'IGHJ2*01'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ3*01'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ3*01'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ2*01'], 'Musmus'], [['Musmus', 'IGHJ2*01'], 'Musmus'], [['Musmus', 'IGHJ3*01'], 'Musmus'], [['Musmus', 'IGHJ2*01'], 'Musmus'], [['Musmus', 'IGHJ3*01'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ3*01'], 'Musmus'], [['Musmus', 'IGHJ2*01'], 'Musmus'], [['Musmus', 'IGHJ3*01'], 'Musmus'], [['Musmus', 'IGHJ3*01', 'IGHJ3*02'], 'Musmus'], [['Musmus', 'IGHJ4*01'], 'Musmus'], [['Musmus', 'IGHJ3*01'], 'Musmus']]
+Verifying D-Gene Column ------------------------------------------------>FAILED 
+Please verify entries
+ [[['Musmus', 'IGHD1-1*01'], 'Musmus'], [['Musmus', 'IGHD1-3*01'], 'Musmus'], [['Musmus', 'IGHD1-2*01'], 'Musmus'], [['Musmus', 'IGHD2-1*01'], 'Musmus'], [['Musmus', 'IGHD1-1*01'], 'Musmus'], [['Musmus', 'IGHD1-1*01'], 'Musmus'], [['Musmus', 'IGHD1-1*01'], 'Musmus'], [['Musmus', 'IGHD2-3*01'], 'Musmus'], [['Musmus', 'IGHD2-5*01'], 'Musmus'], [['Musmus', 'IGHD2-3*01'], 'Musmus'], [['Musmus', 'IGHD3-1*01'], 'Musmus'], [['Musmus', 'IGHD2-3*01'], 'Musmus'], [['Musmus', 'IGHD1-1*01'], 'Musmus'], [['Musmus', 'IGHD2-3*01'], 'Musmus'], [['Musmus', 'IGHD2-3*01'], 'Musmus'], [['Musmus', 'IGHD2-14*01'], 'Musmus'], [['Musmus', 'IGHD2-3*01'], 'Musmus'], [['Musmus', 'IGHD2-13*01'], 'Musmus'], [['Musmus', 'IGHD2-3*01'], 'Musmus']]
+End Test 2
+
+
+Begin Test 3
+Identify whether this is an 'IG' or 'TR' study
+Total number of 'IG' occurrences in V-gene: 33
+Total number of 'IG' occurrences in J-gene: 26
+Total number of 'IG' occurrences in D-gene: 19
+Total number of 'TR' occurrences in V-gene: 0
+Total number of 'TR' occurrences in J-gene: 0
+Total number of 'TR' occurrences in D-gene: 0
+
+------------------------------------------------>IG study
+Breakdown of occurrences
+V-gene
+    Number of 'IG' occurrences  Number of 'TR' occurrences
+0                            1                           0
+1                            1                           0
+2                            1                           0
+3                            1                           0
+4                            1                           0
+5                            1                           0
+6                            1                           0
+7                            1                           0
+8                            1                           0
+9                            1                           0
+10                           1                           0
+11                           1                           0
+12                           1                           0
+13                           2                           0
+14                           1                           0
+15                           1                           0
+16                           4                           0
+17                           1                           0
+18                           1                           0
+19                           2                           0
+20                           2                           0
+21                           3                           0
+22                           1                           0
+23                           1                           0
+24                           1                           0
+J-gene
+    Number of 'IG' occurrences  Number of 'TR' occurrences
+0                            1                           0
+1                            1                           0
+2                            1                           0
+3                            2                           0
+4                            1                           0
+5                            1                           0
+6                            1                           0
+7                            1                           0
+8                            1                           0
+9                            1                           0
+10                           1                           0
+11                           1                           0
+12                           1                           0
+13                           1                           0
+14                           1                           0
+15                           1                           0
+16                           1                           0
+17                           1                           0
+18                           1                           0
+19                           1                           0
+20                           1                           0
+21                           0                           0
+22                           2                           0
+23                           1                           0
+24                           1                           0
+D-gene
+    Number of 'IG' occurrences  Number of 'TR' occurrences
+0                            1                           0
+1                            0                           0
+2                            1                           0
+3                            1                           0
+4                            0                           0
+5                            1                           0
+6                            1                           0
+7                            1                           0
+8                            0                           0
+9                            1                           0
+10                           0                           0
+11                           0                           0
+12                           1                           0
+13                           1                           0
+14                           1                           0
+15                           1                           0
+16                           1                           0
+17                           1                           0
+18                           1                           0
+19                           1                           0
+20                           1                           0
+21                           0                           0
+22                           1                           0
+23                           1                           0
+24                           1                           0
+End Test 3
+
+
+Begin Test 4
+Identify 3rd letter is the same across all entries------------------------------------------------>PASSED
+Third letter is {'H'}
+End Test 4
+
+

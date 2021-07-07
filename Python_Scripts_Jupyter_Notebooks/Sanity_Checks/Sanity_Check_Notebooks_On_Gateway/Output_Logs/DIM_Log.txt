@@ -1,0 +1,120 @@
+Test Sequence Metadata
+Lab: Department of Immunology and Microbiology
+Perform tests on ./CSV_FILES/DIM_Seq.csv
+
+
+Begin Test 1: 
+Verify length of Junction Sequence(AA) is correct------------------------------------------------>FAILED
+ Please verify entries [[False, 1, '', 3], [False, 4, '', 3], [False, 6, '', 3], [False, 16, '', 3], [False, 17, '', 3], [False, 20, '', 3]]
+End Test 1
+
+
+Begin Test 2: 
+Verify All entries contain either IG or TR names
+Verifying V-Gene Column ------------------------------------------------>PASSED
+Verifying J-Gene Column ------------------------------------------------>PASSED
+Verifying D-Gene Column ------------------------------------------------>PASSED
+End Test 2
+
+
+Begin Test 3
+Identify whether this is an 'IG' or 'TR' study
+Total number of 'IG' occurrences in V-gene: 0
+Total number of 'IG' occurrences in J-gene: 0
+Total number of 'IG' occurrences in D-gene: 0
+Total number of 'TR' occurrences in V-gene: 25
+Total number of 'TR' occurrences in J-gene: 25
+Total number of 'TR' occurrences in D-gene: 25
+
+------------------------------------------------>TR study
+Breakdown of occurrences
+V-gene
+    Number of 'IG' occurrences  Number of 'TR' occurrences
+0                            0                           1
+1                            0                           1
+2                            0                           1
+3                            0                           1
+4                            0                           1
+5                            0                           1
+6                            0                           1
+7                            0                           1
+8                            0                           1
+9                            0                           1
+10                           0                           1
+11                           0                           1
+12                           0                           1
+13                           0                           1
+14                           0                           1
+15                           0                           1
+16                           0                           1
+17                           0                           1
+18                           0                           1
+19                           0                           1
+20                           0                           1
+21                           0                           1
+22                           0                           1
+23                           0                           1
+24                           0                           1
+J-gene
+    Number of 'IG' occurrences  Number of 'TR' occurrences
+0                            0                           1
+1                            0                           1
+2                            0                           1
+3                            0                           1
+4                            0                           1
+5                            0                           1
+6                            0                           1
+7                            0                           1
+8                            0                           1
+9                            0                           1
+10                           0                           1
+11                           0                           1
+12                           0                           1
+13                           0                           1
+14                           0                           1
+15                           0                           1
+16                           0                           1
+17                           0                           1
+18                           0                           1
+19                           0                           1
+20                           0                           1
+21                           0                           1
+22                           0                           1
+23                           0                           1
+24                           0                           1
+D-gene
+    Number of 'IG' occurrences  Number of 'TR' occurrences
+0                            0                           1
+1                            0                           1
+2                            0                           1
+3                            0                           1
+4                            0                           1
+5                            0                           1
+6                            0                           1
+7                            0                           1
+8                            0                           1
+9                            0                           1
+10                           0                           1
+11                           0                           1
+12                           0                           1
+13                           0                           1
+14                           0                           1
+15                           0                           1
+16                           0                           1
+17                           0                           1
+18                           0                           1
+19                           0                           1
+20                           0                           1
+21                           0                           1
+22                           0                           1
+23                           0                           1
+24                           0                           1
+End Test 3
+
+
+Begin Test 4
+Identify 3rd letter is the same across all entries------------------------------------------------>PASSED
+Third letter is {'B'}
+End Test 4
+
+
