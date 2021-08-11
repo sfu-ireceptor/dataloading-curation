@@ -1,0 +1,9 @@
+{ 
+  "filters": {
+    "op":"=",
+    "content": {
+      "field":"subject.genotype.receptor_genotype_set.genotype_class_list.documented_alleles.gene_symbol",
+      "value":"IGHV6-1*01"
+    } 
+  }
+}
