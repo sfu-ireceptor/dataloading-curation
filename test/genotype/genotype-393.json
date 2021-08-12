@@ -1,0 +1,511 @@
+{
+    "Repertoire": [
+        {
+            "data_processing": [
+                {
+                    "data_processing_files": [
+                        "SRR1298740.txz"
+                    ]
+                }
+            ],
+            "repertoire_id": "393",
+            "subject": {
+                "genotype": {
+                    "receptor_genotype_set": {
+			"receptor_genotype_set_id":"43113",
+                        "genotype_class_list": [
+                            {
+                                "deleted_genes": [
+                                    {
+                                        "gene_symbol": "IGHV2-70D",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-43",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV5-10-1",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD1-1",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD7-27",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-72",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-69-2",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-66",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-64",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-58",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-28",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV2-26",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-20",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-64D",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV7-4-1",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD4-11",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD5-18",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    }
+                                ],
+                                "documented_alleles": [
+                                    {
+                                        "gene_symbol": "IGHV1-2*04",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-2*07",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-3*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-8*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-18*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-24*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-46*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-46*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-46*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-69*06",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-69*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV1-69D*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV2-5*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV2-70*04",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV2-70*13",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-7*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-7*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-9*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-11*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-11*06",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-13*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-15*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-15*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-15*07",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-21*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-23*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-23D*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30*18",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30*04",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30-3*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30-3*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30-3*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30-5*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-30-5*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-33*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-33*06",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-33*07",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-43D*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-48*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-48*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-49*04",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-53*04",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-53*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-53*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-53*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-69-1*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-73*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-73*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-74*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV3-NL1*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-4*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-30-2*04",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-30-2*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-30-4*07",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-31*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-31*11",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-34*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-34*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-38-2*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-38-2*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-39*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-39*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-59*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-59*08",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-59*09",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-61*07",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-61*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-61*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV4-61*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV5-51*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHV6-1*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD1-7*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD1-14*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD1-20*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD1-26*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD2-2*03",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD2-8*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD2-15*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD2-21*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD3-3*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD3-9*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD3-10*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD3-16*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD3-16*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD3-22*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD4-17*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD4-23*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD5-12*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD5-24*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD6-6*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD6-13*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD6-19*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHD6-25*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHJ1*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHJ2*01",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHJ3*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHJ4*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHJ5*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    },
+                                    {
+                                        "gene_symbol": "IGHJ6*02",
+                                        "germline_set_ref": "IMGT:201736-4"
+                                    }
+                                ],
+                                "id": null,
+			        "receptor_genotype_id":"43113-IGH",
+                                "inference_process": "repertoire_sequencing",
+                                "locus": "IGH",
+                                "undocumented_alleles": [
+                                    {
+                                        "allele_name": "01_G75C",
+                                        "sequence": "sequence"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
