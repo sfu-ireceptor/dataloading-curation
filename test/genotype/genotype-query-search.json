@@ -3,7 +3,8 @@
     "op":"=",
     "content": {
       "field":"subject.genotype.receptor_genotype_set.genotype_class_list.documented_alleles.gene_symbol",
-      "value":"IGHV6-1*01"
+      "value":"IGHV1-3*01"
     } 
-  }
+  },
+  "facets":"subject.subject_id"
 }
