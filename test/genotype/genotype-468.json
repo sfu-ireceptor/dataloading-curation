@@ -3,11 +3,15 @@
         {
             "data_processing": [
                 {
+		    "data_processing_id": "403",
                     "data_processing_files": [
                         "SRR1298740.txz"
                     ]
                 }
             ],
+	    "sample": {
+		"sample_processing_id":"393"
+	    },
             "repertoire_id": "468",
             "subject": {
                 "genotype": {
