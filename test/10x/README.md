@@ -28,3 +28,4 @@ tail -n +4 count/sample_feature_bc_matrix/matrix.mtx > count/sample_feature_bc_m
 python3 10x-vdj2GEX.py vdj_b/cell_barcodes.json count/sample_feature_bc_matrix/barcodes.tsv count/sample_feature_bc_matrix/features.tsv count/sample_feature_bc_matrix/matrix-trimmed.mtx > vdj_b_gex.json
 python3 10x-vdj2GEX.py vdj_t/cell_barcodes.json count/sample_feature_bc_matrix/barcodes.tsv count/sample_feature_bc_matrix/features.tsv count/sample_feature_bc_matrix/matrix-trimmed.mtx > vdj_t_gex.json
 ```
+Requirements: The python code used here requires both the pandas and numpy modules to run. This is typically easy to either load (using modules on modern HPC machines) or install with PIP.
