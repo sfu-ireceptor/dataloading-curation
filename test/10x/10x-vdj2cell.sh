@@ -3,6 +3,10 @@
 # Takes 10X VDJ cell_barcodes.json files from the VDJ pipeline and generates a
 # AIRR Cell JSON file. The file is a JSON array of strings.
 
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 cell_barcodes.json"
+    exit
+fi
 # Steps in the pipeline:
 # - Its JSON so we only want the lines with a " in it (grep "\"")
 # - We want the string without quotes, use awk with " as seperator (awk -F'"' '{print $2}')
