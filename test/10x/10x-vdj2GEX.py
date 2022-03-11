@@ -80,8 +80,12 @@ def processVDJGEX(b_t_cell_file, cell_file, feature_file, matrix_file, verbose):
 
             if cell_count > 1:
                 print(',')
-            print('{"cell_id":"%s", "property":"%s", "ir_property_label_expression":"%s", "value":%d}'%
-                    (cell, gene_id, gene_label, level),end='')
+            if gene_id[:4] == "ENSG":
+                print('{"cell_id":"%s", "property":{"id":"ENSG:%s", "label":"%s"}, "value":%d}'%
+                      (cell, gene_id, gene_label, level),end='')
+            else:
+                print('{"cell_id":"%s", "property":{"id":"%s", "label":"%s"}, "value":%d}'%
+                      (cell, gene_id, gene_label, level),end='')
 
     print("\n]")
 
