@@ -30,7 +30,7 @@ def processVDJCell(cell_file, verbose):
     for cell in cell_dict:
         if count == num_cells-1:
             separator = ''
-        print('{"cell_id":%s, %s}%s'%(cell,  the_rest, separator))
+        print('{"cell_id":"%s", %s}%s'%(cell,  the_rest, separator))
         count = count + 1
     print("]")
 
