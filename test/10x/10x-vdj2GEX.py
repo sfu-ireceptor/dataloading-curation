@@ -30,6 +30,8 @@ def processVDJGEX(b_t_cell_file, cell_file, feature_file, matrix_file, verbose):
         print(cell_df)
 
     # Open the feature file.
+    # Feature files are of the form gene_id, gene_label, processing_type
+    # gene_id is often an Ensembl Gene ID e.g. ENSG0000...
     try:
         with open(feature_file) as f:
             feature_df = pd.read_csv(f, sep='\t', header=None)
@@ -40,12 +42,11 @@ def processVDJGEX(b_t_cell_file, cell_file, feature_file, matrix_file, verbose):
     if verbose:
         print(feature_df)
 
-    # Open the matrix file for reading in chunks.
-    chunk_size = 1000
+    # Open the matrix file for reading
+    # 10X matrices are of the form gene, cell, value
+    # gene and cell elements are an index into another file and therefore object.
     try:
         with open(matrix_file) as f:
-            #matrix_df_reader = pd.read_csv(f, sep=' ', chunksize=chunk_size)
-            #matrix_df = pd.read_csv(f, sep=' ', header=[0,1,2])
             matrix_df = pd.read_csv(f, sep=' ', header=None)
     except Exception as e:
         print('ERROR: Unable to read matrix file %s'%(matrix_file))
@@ -54,32 +55,39 @@ def processVDJGEX(b_t_cell_file, cell_file, feature_file, matrix_file, verbose):
     if verbose:
         print(matrix_df)
 
-    # Iterate over the file a chunk at a time. Each chunk is a data frame.
-    #total_records = 0
-    #for df_chunk in matrix_df_reader:
-        #total_records += chunk_size
-        #print("Read %d records"%(total_records))
+    # Iterate over the file 
     print("[")
     num_rows = len(matrix_df.index)
     cell_count = 0
     for ind in matrix_df.index:
-        # Get the cell bar code we are processing
+        # Get the cell bar code we are processing (matrix element 1)
         cell_index = matrix_df[1][ind]
+        # Get the cell from the cell object, indexes are 1 based, python is 0 based
         cell = cell_df[0][cell_index-1]
 
         # Check to see if the barcode is in the B/T cell list, if so process it,
         # if not skip it.
         if cell in cell_dict:
             cell_count += 1
+            # Get the gene index (matrix element 0)
             gene_index = matrix_df[0][ind]
+            # Get the level (matrix element 2)
             level = matrix_df[2][ind]
 
+            # Get the gene id (feature element 0)
             gene_id = feature_df[0][gene_index-1]
+            # Get the gene id (feature element 1)
             gene_label = feature_df[1][gene_index-1]
 
 
+            # We don't print a JSON separator or new line on each line (which is what we want for 
+            # the last line). So if we are processing any but the first line, we want to print
+            # out the separator needed for the previous line. This means the last line won't have
+            # a comma separator but all other will.
             if cell_count > 1:
                 print(',')
+            # Create a CURIE based on the Ensembl ID (e.g. ENSG:ENSG000...)
+            # otherwise print the label
             if gene_id[:4] == "ENSG":
                 print('{"cell_id":"%s", "property":{"id":"ENSG:%s", "label":"%s"}, "value":%d}'%
                       (cell, gene_id, gene_label, level),end='')
