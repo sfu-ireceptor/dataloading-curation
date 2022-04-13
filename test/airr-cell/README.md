@@ -1,49 +1,12 @@
-# Using the 10X test data sets
+# Overview 
+This directory contains test cell and gene expression data in the AIRR format. This data was produced from Cell Ranger's VDJ pipeline, using the 10X to AIRR conversion utilities available in the iReceptor [10x2AIRR github repository](https://github.com/sfu-ireceptor/sandbox/tree/master/10x2AIRR)
 
-## Creating an AIRR cell file
+A detailed description of using cellranger and the 10x2AIRR conversion tools are beyond the scope of this document, for more details please visit the [cellranger documentation page](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
 
-Create an AIRR cell file from either the cell_barcodes.json file from the VDJ pipeline or the barcodes.tsv file from the count pipeline:
+# Example Data
 
-```
-python3 10x-vdj2cell.py cell_barcodes.json > cells.json
-python3 10x-count2cell.py barcodes.tsv > cells.json
-```
-If using the VDJ pipeline, you typically want to run 10x-vdj2cell.py on the cell_barcodes.json file in both the vdj_b and vdj_t directories
-This will give you two cells.json files with the t-cell and b-cell cell definitions in the two respective files.
+The example data in this directory is a small subset of the data from the paper "[Immune cell profiling of COVID-19 patients in the recovery stage by single-cell sequencing](https://doi.org/10.1038/s41421-020-0168-9) from Wen et al. The data set consists of the Cell data from a single subject in this study (subject HC1) and a small fraction of the gene expression data from this subject. As such, it should only be considered in the context of a test data set and it should not be considered a representative sample of the data from this study. The data set was curated using the [iReceptor Data Curation process](http://www.ireceptor.org/curation). The data set, in its entirety, is available through the [iReceptor Scientific Gateway](http://gateway.ireceptor.org).
 
-If you are using the count pipeline, you want to run 10x-count2cell.py on the barcodes.tsv file in the count/sample_feature_bc_matrix directory.
+The example data set consists a repertoire metadata file, as a UTF-8 encoded CSV file. The file consists of a header line, which contains the field names that will be written to the repository, followed by a single metadata line for a single repertoire from the above study. In a typical repertoire metadata file, there would be a single line for each repertoire in the study. The remaining files are the Cell and Gene Expression data for the HC1 subject, split into cells that are either B-cell or T-cell data. 
 
-## Creating an AIRR GEX file
-
-Create an AIRR GEX file is slightly more complex. It makes use of the files in the count/sample_feature_bc_matrix directory. If
-you are using the VDJ pipeline to create just b-cell and t-cell related GEX data, you also need the cell_barcodes.json file from 
-either (or both tpyically) from the vdj_b and vdj_t directories. In a typical 10X output directory, to generate t-cell and b-cell 
-GEX data, do the following:
-
-```
-# First trim the matrix.mtx file so it does not have the three header lines
-tail -n +4 count/sample_feature_bc_matrix/matrix.mtx > count/sample_feature_bc_matrix/matrix-trimmed.mtx
-
-# Then generate two GEX AIRR JSON files, one for the b-cells and one for the t-cells
-python3 10x-vdj2GEX.py vdj_b/cell_barcodes.json count/sample_feature_bc_matrix/barcodes.tsv count/sample_feature_bc_matrix/features.tsv count/sample_feature_bc_matrix/matrix-trimmed.mtx > vdj_b_gex.json
-python3 10x-vdj2GEX.py vdj_t/cell_barcodes.json count/sample_feature_bc_matrix/barcodes.tsv count/sample_feature_bc_matrix/features.tsv count/sample_feature_bc_matrix/matrix-trimmed.mtx > vdj_t_gex.json
-```
-
-## Creating an AIRR Clone file
-
-Creating an AIRR Clone file requires the use of several files from the 10X VDJ run. Typically you would run it
-from both the `vdj_b` and `vdj_t` directires as follows:
-
-```
-$ python3 10x-vdj2clone.py --locus=TRB HC1-TRB.tsv clonotypes.csv consensus_annotations.csv HC1-vdj_t-clones.json
-
-```
-Currently, the 10X conversion expects either IGH or TRB data as input, assuming that clones are paired but
-recognizing that we can't represent clones with multiple chains in the AIRR standard as of yet.
-The command takes an AIRR TSV rearrangement file
-(preferably only of the chain being processed), the clonotypes.csv file, and the consensus_annotations.cvs
-file as input. The last argument is the output file for the AIRR JSON clones.
-
-## Requirements
-
-Requirements: The python code used here requires both the pandas and numpy modules to run. This is typically easy to either load (using modules on modern HPC machines) or install with PIP.
+If you are using an [iReceptor Turnkey Repository](https://github.com/sfu-ireceptor/turnkey-service-php) please refer to the loading data section of the iReceptor Turnkey documentation. 
