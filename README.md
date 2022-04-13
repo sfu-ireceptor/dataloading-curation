@@ -4,8 +4,8 @@ This GIT repository contains example files and documentation for loading data in
 
 For more information on metadata curation, please refer to: 
 * [The iReceptor Metadata documentation](metadata)
-* [The iReceptor metadata example](test/ir_repertoire)
-* [The AIRR repertoire metadata example](test/airr_repertoire)
+* [The iReceptor metadata example](test/ir-repertoire)
+* [The AIRR repertoire metadata example](test/airr-repertoire)
 
 For more details on rearrangement curation, please refer to:
 * [The test data set documentation](test)
