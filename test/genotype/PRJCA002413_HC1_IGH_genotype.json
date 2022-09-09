@@ -1,0 +1,394 @@
+{
+    "Repertoire": [
+        {
+            "repertoire_id": "PRJCA002413-Healthy_Control_1-IGH",
+            "sample":[{"sample_processing_id": "PRJCA002413-Healthy_Control_1-IGH"}],
+            "subject": {
+                "genotype": {
+                    "receptor_genotype_set": {
+                        "receptor_genotype_set_id": "airr-covid-19_PRJCA002413_Healthy_Control_1_Healthy_Control_1_peripheralblood_IGH",
+                        "genotype_class_list": [
+                            {
+                                "receptor_genotype_id": "airr-covid-19_PRJCA002413_Healthy_Control_1_Healthy_Control_1_peripheralblood_IGH",
+                                "locus": "IGH",
+                                "inference_process": "repertoire_sequencing",
+                                "documented_alleles": [
+                                    {
+                                        "label": "IGHV1-2*04",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-3*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-8*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-8*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-18*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-24*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-45*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-46*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-46*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-58*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-69*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-69*04",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-69*15",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV1-69D*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV2-5*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV2-26*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV2-70*15",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-7*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-9*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-11*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-13*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-15*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-20*04",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-20*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-21*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-23*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-23D*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-30*18",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-30*03",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-30*04",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-30-3*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-30-5*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-33*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-48*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-48*04",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-49*05",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-49*03",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-53*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-66*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-69-1*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-69-1*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-72*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-73*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV3-74*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-4*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-30-2*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-30-4*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-31*03",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-34*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-38-2*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-39*07",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-39*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-59*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-59*08",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV4-61*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV5-51*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV6-1*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHV7-4-1*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD1-1*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD1-7*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD1-14*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD1-20*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD1-26*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD2-2*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD2-8*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD2-15*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD2-21*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD2-21*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD3-3*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD3-9*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD3-10*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD3-16*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD3-16*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD3-22*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD4-17*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD4-23*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD5-12*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD5-24*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD6-6*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD6-13*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD6-19*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD6-25*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHD7-27*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHJ1*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHJ2*01",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHJ3*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHJ4*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHJ5*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHJ6*02",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    },
+                                    {
+                                        "label": "IGHJ6*03",
+                                        "germline_set_ref": "refdata-cellranger-vdj-GRCh38-alts-ensembl-4.0.0"
+                                    }
+                                ],
+                                "undocumented_alleles": [],
+                                "deleted_genes": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "data_processing": [
+                {
+		    "data_processing_id" : "PRJCA002413-Healthy_Control_1",
+                    "data_processing_files": [
+                        "HC1-IGH.tsv"
+                    ]
+                }
+            ]
+        }
+    ]
+}
