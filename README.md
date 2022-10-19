@@ -14,11 +14,11 @@ For more details on Rearrangement data curation, please refer to:
 * [The IMGT V-QUEST Rearrangement example](test/imgt)
 
 For more details on Clone data curation, please refer to:
-* [The AIRR Clone format (including igblast) example](test/airr-clone)
+* [The AIRR Clone format example](test/airr-clone)
 * [The MiXCR Clone format example](test/mixcr-clone)
 
-For more details on Cell data curation, please refer to:
-* [The AIRR Cell format (including igblast) example](test/airr-cell)
+For more details on Cell and Expression (GEX) data curation, please refer to:
+* [The AIRR Cell format example](test/airr-cell)
 
 # The iReceptor Data Curation process
 
