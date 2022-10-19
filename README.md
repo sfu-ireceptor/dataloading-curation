@@ -2,16 +2,23 @@
 
 This GIT repository contains example files and documentation for loading data into iReceptor repositories. Examples for metadata as well as rearrangement files for a number of widely used annotation tools are provided. The README files in each of the subfolders contain more documentation.
 
-For more information on metadata curation, please refer to: 
+For more information on Repertoire metadata curation, please refer to: 
 * [The iReceptor Metadata documentation](metadata)
 * [The iReceptor metadata example](test/ir-repertoire)
 * [The AIRR repertoire metadata example](test/airr-repertoire)
 
-For more details on rearrangement curation, please refer to:
+For more details on Rearrangement data curation, please refer to:
 * [The test data set documentation](test)
-* [The AIRR rearrangement format (including igblast) example](test/igblast)
-* [The MiXCR rearrangement format example](test/mixcr)
-* [The IMGT V-QUEST rearrangement example](test/imgt)
+* [The AIRR Rearrangement format (including igblast) example](test/igblast)
+* [The MiXCR Rearrangement format example](test/mixcr)
+* [The IMGT V-QUEST Rearrangement example](test/imgt)
+
+For more details on Clone data curation, please refer to:
+* [The AIRR Clone format (including igblast) example](test/airr-clone)
+* [The MiXCR Clone format example](test/mixcr-clone)
+
+For more details on Cell data curation, please refer to:
+* [The AIRR Cell format (including igblast) example](test/airr-cell)
 
 # The iReceptor Data Curation process
 
