@@ -22,7 +22,7 @@ a iReceptor Repertoire metadata file (a UTF-8 encoded CSV file) and a set of rea
 Each repertiore has been annotated with the HighV-QUEST annotation
 tool and the directory contains a single rearrangement file (a single .txz file) for each
 repertoire. 
-If you are using an iReceptor Turnkey Repository (https://github.com/sfu-ireceptor/turnkey-service-php) please refer to the loading data section of the iReceptor Turnkey documentation for more detailed instructions on load Repertoire metadata and Rearrangement files.
+If you are using an iReceptor Turnkey Repository (https://github.com/sfu-ireceptor/turnkey-service-php) please refer to the loading data section of the iReceptor Turnkey documentation for more detailed instructions on loading Repertoire metadata and Rearrangement files.
 
 
 
