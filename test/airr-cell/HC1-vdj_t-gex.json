@@ -19997,6 +19997,5 @@
 {"cell_id":"AAACGGGAGATGGGTC-1", "property":{"id":"ENSG:ENSG00000091164", "label":"TXNL1"}, "value":1},
 {"cell_id":"AAACGGGAGATGGGTC-1", "property":{"id":"ENSG:ENSG00000141664", "label":"ZCCHC2"}, "value":1},
 {"cell_id":"AAACGGGAGATGGGTC-1", "property":{"id":"ENSG:ENSG00000197971", "label":"MBP"}, "value":2},
-{"cell_id":"AAACGGGAGATGGGTC-1", "property":{"id":"ENSG:ENSG00000197540", "label":"GZMM"}, "value":1},
-{"cell_id":"AACTCCCTCGCAAGCC-1", "property":{"id":"ENSG:ENSG00000198695", "label":"MT-ND6"}, "value":4}
+{"cell_id":"AAACGGGAGATGGGTC-1", "property":{"id":"ENSG:ENSG00000197540", "label":"GZMM"}, "value":1}
 ]
