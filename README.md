@@ -1,6 +1,8 @@
 # iReceptor Data Curation
 
-This GIT repository contains example files and documentation for loading data into iReceptor repositories. Examples for metadata as well as rearrangement files for a number of widely used annotation tools are provided. The README files in each of the subfolders contain more documentation.
+This GIT repository contains example files and documentation for loading data into iReceptor repositories. Examples for metadata as well as rearrangement files for a number of widely used annotation tools are provided. The README files in each of the subfolders contain more documentation. The Zenodo link for this release is here:
+
+[![DOI](https://zenodo.org/badge/110872534.svg)](https://zenodo.org/badge/latestdoi/110872534)
 
 For more information on Repertoire metadata curation, please refer to: 
 * [The iReceptor Metadata documentation](metadata)
