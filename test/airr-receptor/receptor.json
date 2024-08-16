@@ -1,6 +1,5 @@
 [
     {
-	    "receptor_id":"IEDB:10",
 	    "receptor_hash":"31D70E6357172EF0E5E1C603C91C419EF548D6C04521B1F60D65A89592B30334",
 	    "receptor_type":"Ig",
 	    "receptor_variable_domain_1_aa":"EVKLEESGGGLVQPGGSMKLSCAASGFTFSDAWMDWVRQSPEKGLEWVAEIRSKVNNHAIHYAESVKGRFTVSRDDSKSSVYLQMNSLRAEDTGIYYCSGWSFLYWGQGTLVTVSA",
@@ -10,13 +9,14 @@
 	    "receptor_ref":["IEDB_RECEPTOR:10"]
     },
     {
-	    "receptor_id":"PRJNA744851-R23_inf_vax2-RECEPTOR-AAACCTGAGATCGGGT-6 ",
+	    "receptor_id" : "66bfce93a9f04e15faf7b159",
 	    "receptor_hash":"89BD32A3F03E5FAF9D22107BBD700CB1F65332EDA7EA7C3CAE29D540C4659457",
 	    "receptor_type":"TCR",
 	    "receptor_variable_domain_1_aa":"KAGVTQTPRYLIKTRGQQVTLSCSPISGHRSVSWYQQTPGQGLQFLFEYFSETQRNKGNFPGRFSGRQFSNSRSEMNVSTLELGDSALYLCASSFENQPEAFFGQGTRLTVV",
 	    "receptor_variable_domain_1_locus":"TRB",
 	    "receptor_variable_domain_2_aa":"DQQVKQNSPSLSVQEGRISILNCDYTNSMFDYFLWYKKYPAEGPTFLISISSIKDKNEDGRFTVFLNKSAKHLSLHIVPSQPGDSAVYFCAAPGSARQLTFGSGTQLTVLP",
-	    "receptor_variable_domain_2_locus":"TRA"
+	    "receptor_variable_domain_2_locus":"TRA",
+	    "receptor_ref":["ADC:example.ireceptor.org/airr/v1/receptor/66bfce93a9f04e15faf7b159"]
     }
 ]
 
