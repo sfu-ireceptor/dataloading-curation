@@ -1,0 +1,19 @@
+[
+    {
+"cell_id":"AAACCTGAGATCGGGT-6",
+"ligand_type":"MHC:peptide",
+"antigen_type":"peptide",
+"antigen":{"id":"NCBI:YP_009725307.1","label":"RNA-dependent RNA polymerase (nsp12)"},
+"antigen_source_species":{"id":"NCBITAXON:2697049","label":"Severe acute respiratory syndrome coronavirus 2"},
+"peptide_start":738,
+"peptide_end":746,
+"peptide_sequence_aa":"DTDFVNEFY",
+"mhc_class":"MHC-I",
+"mhc_gene_1":{"id":"MRO:0000046","label":"HLA-A"},
+"mhc_allele_1":"HLA-A*01:01",
+"reactivity_method":"dextramer barcoding",
+"reactivity_readout":"barcode count",
+"reactivity_value":23,
+"reactivity_unit":"absolute count"
+    }
+]
