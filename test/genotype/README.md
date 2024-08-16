@@ -1,5 +1,5 @@
 # Overview 
-This directory contains test genotype data in the [AIRR Repertoire genotype](https://docs.airr-community.org/en/stable/datarep/metadata.html) format.
+This directory contains test genotype data in the [AIRR Repertoire genotype](https://docs.airr-community.org/en/stable/datarep/germline.html) format.
 
 # Examples
 
