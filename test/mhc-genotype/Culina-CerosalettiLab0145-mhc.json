@@ -1,0 +1,63 @@
+{
+  "Repertoire": [
+    {
+      "repertoire_id": "66e0ac0dda80c8b8e5042bbd",
+      "data_processing": [
+        {
+          "data_processing_id": "66e0ac0dda80c8b8e5042bbd",
+          "data_processing_files": [
+            "CerosalettiLab0145_wb07957036_8+RO+62L+.tsv"
+          ]
+        }
+      ],
+      "sample": {
+        "sample_processing_id": "66e0ac0dda80c8b8e5042bbd"
+      },
+      "subject": {
+        "genotype": {
+          "mhc_genotype_set": {
+            "mhc_genotype_set_id": "CerosalettiLab0145_MHC",
+            "mhc_genotype_list": [
+              {
+                "mhc_genotype_id": "CerosalettiLab0145_MHC-II",
+                "mhc_class": "MHC-II",
+                "mhc_alleles": [
+                  {
+                    "allele_designation": "HLA-DRB1*03:01",
+                    "gene": {
+                      "id": "MRO:0000057",
+                      "label": "HLA-DRB1 gene"
+                    }
+                  },
+                  {
+                    "allele_designation": "HLA-DRB1*04:01",
+                    "gene": {
+                      "id": "MRO:0000057",
+                      "label": "HLA-DRB1 gene"
+                    }
+                  },
+                  {
+                    "allele_designation": "HLA-DQB1*02:01",
+                    "gene": {
+                      "id": "MRO:0000054",
+                      "label": "HLA-DQB gene"
+                    }
+                  },
+                  {
+                    "allele_designation": "HLA-DQB1*03:02",
+                    "gene": {
+                      "id": "MRO:0000054",
+                      "label": "HLA-DQB gene"
+                    }
+                  }
+                ],
+                "mhc_genotyping_method": "sequencing-based"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
+
